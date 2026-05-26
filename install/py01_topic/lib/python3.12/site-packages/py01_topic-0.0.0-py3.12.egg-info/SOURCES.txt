@@ -8,6 +8,7 @@ setup.py
 ../../build/py01_topic/py01_topic.egg-info/requires.txt
 ../../build/py01_topic/py01_topic.egg-info/top_level.txt
 ../../build/py01_topic/py01_topic.egg-info/zip-safe
+launch/demo_str_py.launch.py
 py01_topic/__init__.py
 py01_topic/demo_str_py_listener.py
 py01_topic/demo_str_py_publisher.py
