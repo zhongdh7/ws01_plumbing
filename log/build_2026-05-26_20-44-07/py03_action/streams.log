@@ -1,0 +1,25 @@
+[0.437s] Invoking command in '/home/loser/ws01_plumbing/src/py03_action': AMENT_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loser/ws01_plumbing/build/py03_action/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages:/home/loser/ws01_plumbing/install/base_interfaces_demo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py03_action build --build-base /home/loser/ws01_plumbing/build/py03_action/build install --record /home/loser/ws01_plumbing/build/py03_action/install.log --single-version-externally-managed install_data
+[0.581s] running egg_info
+[0.590s] writing ../../build/py03_action/py03_action.egg-info/PKG-INFO
+[0.591s] writing dependency_links to ../../build/py03_action/py03_action.egg-info/dependency_links.txt
+[0.591s] writing entry points to ../../build/py03_action/py03_action.egg-info/entry_points.txt
+[0.591s] writing requirements to ../../build/py03_action/py03_action.egg-info/requires.txt
+[0.591s] writing top-level names to ../../build/py03_action/py03_action.egg-info/top_level.txt
+[0.613s] reading manifest file '../../build/py03_action/py03_action.egg-info/SOURCES.txt'
+[0.613s] writing manifest file '../../build/py03_action/py03_action.egg-info/SOURCES.txt'
+[0.613s] running build
+[0.613s] running build_py
+[0.613s] copying py03_action/demo01_action_server.py -> /home/loser/ws01_plumbing/build/py03_action/build/lib/py03_action
+[0.613s] running install
+[0.616s] running install_lib
+[0.625s] copying /home/loser/ws01_plumbing/build/py03_action/build/lib/py03_action/demo01_action_server.py -> /home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages/py03_action
+[0.626s] byte-compiling /home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages/py03_action/demo01_action_server.py to demo01_action_server.cpython-312.pyc
+[0.626s] running install_data
+[0.626s] running install_egg_info
+[0.638s] removing '/home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages/py03_action-0.0.0-py3.12.egg-info' (and everything under it)
+[0.638s] Copying ../../build/py03_action/py03_action.egg-info to /home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages/py03_action-0.0.0-py3.12.egg-info
+[0.639s] running install_scripts
+[0.711s] Installing demo01_action_server script to /home/loser/ws01_plumbing/install/py03_action/lib/py03_action
+[0.711s] Installing demo02_action_client script to /home/loser/ws01_plumbing/install/py03_action/lib/py03_action
+[0.712s] writing list of installed files to '/home/loser/ws01_plumbing/build/py03_action/install.log'
+[0.729s] Invoked command in '/home/loser/ws01_plumbing/src/py03_action' returned '0': AMENT_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loser/ws01_plumbing/build/py03_action/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages:/home/loser/ws01_plumbing/install/base_interfaces_demo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py03_action build --build-base /home/loser/ws01_plumbing/build/py03_action/build install --record /home/loser/ws01_plumbing/build/py03_action/install.log --single-version-externally-managed install_data

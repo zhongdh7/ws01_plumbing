@@ -10,6 +10,7 @@ setup.py
 ../../build/py03_action/py03_action.egg-info/zip-safe
 py03_action/__init__.py
 py03_action/demo01_action_server.py
+py03_action/demo02_action_client.py
 resource/py03_action
 test/test_copyright.py
 test/test_flake8.py

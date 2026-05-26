@@ -1,6 +1,8 @@
 /home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages/py03_action/__init__.py
+/home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages/py03_action/demo02_action_client.py
 /home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages/py03_action/demo01_action_server.py
 /home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages/py03_action/__pycache__/__init__.cpython-312.pyc
+/home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages/py03_action/__pycache__/demo02_action_client.cpython-312.pyc
 /home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages/py03_action/__pycache__/demo01_action_server.cpython-312.pyc
 /home/loser/ws01_plumbing/install/py03_action/share/ament_index/resource_index/packages/py03_action
 /home/loser/ws01_plumbing/install/py03_action/share/py03_action/package.xml
@@ -12,3 +14,4 @@
 /home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages/py03_action-0.0.0-py3.12.egg-info/requires.txt
 /home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages/py03_action-0.0.0-py3.12.egg-info/zip-safe
 /home/loser/ws01_plumbing/install/py03_action/lib/py03_action/demo01_action_server
+/home/loser/ws01_plumbing/install/py03_action/lib/py03_action/demo02_action_client
