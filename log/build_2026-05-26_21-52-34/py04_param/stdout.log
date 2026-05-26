@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/py04_param/py04_param.egg-info
+writing ../../build/py04_param/py04_param.egg-info/PKG-INFO
+writing dependency_links to ../../build/py04_param/py04_param.egg-info/dependency_links.txt
+writing entry points to ../../build/py04_param/py04_param.egg-info/entry_points.txt
+writing requirements to ../../build/py04_param/py04_param.egg-info/requires.txt
+writing top-level names to ../../build/py04_param/py04_param.egg-info/top_level.txt
+writing manifest file '../../build/py04_param/py04_param.egg-info/SOURCES.txt'
+reading manifest file '../../build/py04_param/py04_param.egg-info/SOURCES.txt'
+writing manifest file '../../build/py04_param/py04_param.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/loser/ws01_plumbing/build/py04_param/build
+creating /home/loser/ws01_plumbing/build/py04_param/build/lib
+creating /home/loser/ws01_plumbing/build/py04_param/build/lib/py04_param
+copying py04_param/__init__.py -> /home/loser/ws01_plumbing/build/py04_param/build/lib/py04_param
+copying py04_param/param_declare.py -> /home/loser/ws01_plumbing/build/py04_param/build/lib/py04_param
+running install
+running install_lib
+creating /home/loser/ws01_plumbing/install/py04_param/lib/python3.12/site-packages/py04_param
+copying /home/loser/ws01_plumbing/build/py04_param/build/lib/py04_param/__init__.py -> /home/loser/ws01_plumbing/install/py04_param/lib/python3.12/site-packages/py04_param
+copying /home/loser/ws01_plumbing/build/py04_param/build/lib/py04_param/param_declare.py -> /home/loser/ws01_plumbing/install/py04_param/lib/python3.12/site-packages/py04_param
+byte-compiling /home/loser/ws01_plumbing/install/py04_param/lib/python3.12/site-packages/py04_param/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/loser/ws01_plumbing/install/py04_param/lib/python3.12/site-packages/py04_param/param_declare.py to param_declare.cpython-312.pyc
+running install_data
+creating /home/loser/ws01_plumbing/install/py04_param/share/ament_index
+creating /home/loser/ws01_plumbing/install/py04_param/share/ament_index/resource_index
+creating /home/loser/ws01_plumbing/install/py04_param/share/ament_index/resource_index/packages
+copying resource/py04_param -> /home/loser/ws01_plumbing/install/py04_param/share/ament_index/resource_index/packages
+copying package.xml -> /home/loser/ws01_plumbing/install/py04_param/share/py04_param
+running install_egg_info
+Copying ../../build/py04_param/py04_param.egg-info to /home/loser/ws01_plumbing/install/py04_param/lib/python3.12/site-packages/py04_param-0.0.0-py3.12.egg-info
+running install_scripts
+Installing param_declare script to /home/loser/ws01_plumbing/install/py04_param/lib/py04_param
+writing list of installed files to '/home/loser/ws01_plumbing/build/py04_param/install.log'

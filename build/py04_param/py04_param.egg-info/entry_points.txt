@@ -1,0 +1,2 @@
+[console_scripts]
+param_declare = py04_param.param_declare:main
