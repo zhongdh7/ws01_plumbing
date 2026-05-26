@@ -1,4 +1,0 @@
-Invoking command in '/home/loser/ws01_plumbing/build/base_interfaces_demo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/loser/ws01_plumbing/build/base_interfaces_demo -- -j4 -l4
-Invoked command in '/home/loser/ws01_plumbing/build/base_interfaces_demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/loser/ws01_plumbing/build/base_interfaces_demo -- -j4 -l4
-Invoking command in '/home/loser/ws01_plumbing/build/base_interfaces_demo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/loser/ws01_plumbing/build/base_interfaces_demo
-Invoked command in '/home/loser/ws01_plumbing/build/base_interfaces_demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/loser/ws01_plumbing/build/base_interfaces_demo

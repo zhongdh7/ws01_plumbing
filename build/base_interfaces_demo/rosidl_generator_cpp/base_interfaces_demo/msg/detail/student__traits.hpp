@@ -2,6 +2,9 @@
 // with input from base_interfaces_demo:msg/Student.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "base_interfaces_demo/msg/student.hpp"
+
+
 #ifndef BASE_INTERFACES_DEMO__MSG__DETAIL__STUDENT__TRAITS_HPP_
 #define BASE_INTERFACES_DEMO__MSG__DETAIL__STUDENT__TRAITS_HPP_
 

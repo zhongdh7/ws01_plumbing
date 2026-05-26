@@ -2,6 +2,9 @@
 // with input from base_interfaces_demo:action/Progress.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "base_interfaces_demo/action/progress.hpp"
+
+
 #ifndef BASE_INTERFACES_DEMO__ACTION__DETAIL__PROGRESS__BUILDER_HPP_
 #define BASE_INTERFACES_DEMO__ACTION__DETAIL__PROGRESS__BUILDER_HPP_
 
@@ -263,6 +266,80 @@ namespace action
 namespace builder
 {
 
+class Init_Progress_SendGoal_Event_response
+{
+public:
+  explicit Init_Progress_SendGoal_Event_response(::base_interfaces_demo::action::Progress_SendGoal_Event & msg)
+  : msg_(msg)
+  {}
+  ::base_interfaces_demo::action::Progress_SendGoal_Event response(::base_interfaces_demo::action::Progress_SendGoal_Event::_response_type arg)
+  {
+    msg_.response = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::base_interfaces_demo::action::Progress_SendGoal_Event msg_;
+};
+
+class Init_Progress_SendGoal_Event_request
+{
+public:
+  explicit Init_Progress_SendGoal_Event_request(::base_interfaces_demo::action::Progress_SendGoal_Event & msg)
+  : msg_(msg)
+  {}
+  Init_Progress_SendGoal_Event_response request(::base_interfaces_demo::action::Progress_SendGoal_Event::_request_type arg)
+  {
+    msg_.request = std::move(arg);
+    return Init_Progress_SendGoal_Event_response(msg_);
+  }
+
+private:
+  ::base_interfaces_demo::action::Progress_SendGoal_Event msg_;
+};
+
+class Init_Progress_SendGoal_Event_info
+{
+public:
+  Init_Progress_SendGoal_Event_info()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_Progress_SendGoal_Event_request info(::base_interfaces_demo::action::Progress_SendGoal_Event::_info_type arg)
+  {
+    msg_.info = std::move(arg);
+    return Init_Progress_SendGoal_Event_request(msg_);
+  }
+
+private:
+  ::base_interfaces_demo::action::Progress_SendGoal_Event msg_;
+};
+
+}  // namespace builder
+
+}  // namespace action
+
+template<typename MessageType>
+auto build();
+
+template<>
+inline
+auto build<::base_interfaces_demo::action::Progress_SendGoal_Event>()
+{
+  return base_interfaces_demo::action::builder::Init_Progress_SendGoal_Event_info();
+}
+
+}  // namespace base_interfaces_demo
+
+
+namespace base_interfaces_demo
+{
+
+namespace action
+{
+
+namespace builder
+{
+
 class Init_Progress_GetResult_Request_goal_id
 {
 public:
@@ -349,6 +426,80 @@ inline
 auto build<::base_interfaces_demo::action::Progress_GetResult_Response>()
 {
   return base_interfaces_demo::action::builder::Init_Progress_GetResult_Response_status();
+}
+
+}  // namespace base_interfaces_demo
+
+
+namespace base_interfaces_demo
+{
+
+namespace action
+{
+
+namespace builder
+{
+
+class Init_Progress_GetResult_Event_response
+{
+public:
+  explicit Init_Progress_GetResult_Event_response(::base_interfaces_demo::action::Progress_GetResult_Event & msg)
+  : msg_(msg)
+  {}
+  ::base_interfaces_demo::action::Progress_GetResult_Event response(::base_interfaces_demo::action::Progress_GetResult_Event::_response_type arg)
+  {
+    msg_.response = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::base_interfaces_demo::action::Progress_GetResult_Event msg_;
+};
+
+class Init_Progress_GetResult_Event_request
+{
+public:
+  explicit Init_Progress_GetResult_Event_request(::base_interfaces_demo::action::Progress_GetResult_Event & msg)
+  : msg_(msg)
+  {}
+  Init_Progress_GetResult_Event_response request(::base_interfaces_demo::action::Progress_GetResult_Event::_request_type arg)
+  {
+    msg_.request = std::move(arg);
+    return Init_Progress_GetResult_Event_response(msg_);
+  }
+
+private:
+  ::base_interfaces_demo::action::Progress_GetResult_Event msg_;
+};
+
+class Init_Progress_GetResult_Event_info
+{
+public:
+  Init_Progress_GetResult_Event_info()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_Progress_GetResult_Event_request info(::base_interfaces_demo::action::Progress_GetResult_Event::_info_type arg)
+  {
+    msg_.info = std::move(arg);
+    return Init_Progress_GetResult_Event_request(msg_);
+  }
+
+private:
+  ::base_interfaces_demo::action::Progress_GetResult_Event msg_;
+};
+
+}  // namespace builder
+
+}  // namespace action
+
+template<typename MessageType>
+auto build();
+
+template<>
+inline
+auto build<::base_interfaces_demo::action::Progress_GetResult_Event>()
+{
+  return base_interfaces_demo::action::builder::Init_Progress_GetResult_Event_info();
 }
 
 }  // namespace base_interfaces_demo

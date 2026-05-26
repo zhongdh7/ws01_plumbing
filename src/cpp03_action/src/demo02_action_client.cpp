@@ -17,6 +17,7 @@ public:
             RCLCPP_ERROR(this->get_logger(),"连接服务端失败");
             return;
         }
+        //发送具体请求
     }
 private:
     rclcpp_action::Client<Progress>::SharedPtr client;
@@ -29,7 +30,7 @@ int main(int argc,char * argv[]){
     rclcpp::init(argc,argv);
     auto client=std::make_shared<ClientNode>();
     client->send_goal(atoi(argv[1]));
-    rclcpp::spin();
+    rclcpp::spin(client);
     rclcpp::shutdown();
     return 0;
 }

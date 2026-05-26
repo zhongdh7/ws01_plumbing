@@ -1,4 +1,0 @@
-[01m[K/home/loser/ws01_plumbing/src/cpp03_action/src/demo01_action_server.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse ServerNode::handle_goal(const GoalUUID&, std::shared_ptr<const base_interfaces_demo::action::Progress_Goal_<std::allocator<void> > >)[m[K’:
-[01m[K/home/loser/ws01_plumbing/src/cpp03_action/src/demo01_action_server.cpp:22:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuuid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
-   22 |         [01;35m[Kconst rclcpp_action::GoalUUID &uuid[m[K,//传过来的这个请求的编号
-      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K

@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/base_interfaces_demo/msg/detail/student__struct.hpp"
   "rosidl_generator_cpp/base_interfaces_demo/msg/detail/student__traits.hpp"
   "rosidl_generator_cpp/base_interfaces_demo/msg/detail/student__type_support.hpp"
+  "rosidl_generator_cpp/base_interfaces_demo/msg/rosidl_generator_cpp__visibility_control.hpp"
   "rosidl_generator_cpp/base_interfaces_demo/msg/student.hpp"
   "rosidl_generator_cpp/base_interfaces_demo/srv/addints.hpp"
   "rosidl_generator_cpp/base_interfaces_demo/srv/detail/addints__builder.hpp"

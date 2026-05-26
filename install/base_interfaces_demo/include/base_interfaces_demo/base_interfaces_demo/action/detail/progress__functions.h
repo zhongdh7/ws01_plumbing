@@ -2,6 +2,9 @@
 // with input from base_interfaces_demo:action/Progress.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "base_interfaces_demo/action/progress.h"
+
+
 #ifndef BASE_INTERFACES_DEMO__ACTION__DETAIL__PROGRESS__FUNCTIONS_H_
 #define BASE_INTERFACES_DEMO__ACTION__DETAIL__PROGRESS__FUNCTIONS_H_
 
@@ -13,10 +16,40 @@ extern "C"
 #include <stdbool.h>
 #include <stdlib.h>
 
+#include "rosidl_runtime_c/action_type_support_struct.h"
+#include "rosidl_runtime_c/message_type_support_struct.h"
+#include "rosidl_runtime_c/service_type_support_struct.h"
+#include "rosidl_runtime_c/type_description/type_description__struct.h"
+#include "rosidl_runtime_c/type_description/type_source__struct.h"
+#include "rosidl_runtime_c/type_hash.h"
 #include "rosidl_runtime_c/visibility_control.h"
 #include "base_interfaces_demo/msg/rosidl_generator_c__visibility_control.h"
 
 #include "base_interfaces_demo/action/detail/progress__struct.h"
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_type_hash_t *
+base_interfaces_demo__action__Progress__get_type_hash(
+  const rosidl_action_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeDescription *
+base_interfaces_demo__action__Progress__get_type_description(
+  const rosidl_action_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource *
+base_interfaces_demo__action__Progress__get_individual_type_description_source(
+  const rosidl_action_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+base_interfaces_demo__action__Progress__get_type_description_sources(
+  const rosidl_action_type_support_t * type_support);
 
 /// Initialize action/Progress message.
 /**
@@ -53,7 +86,7 @@ base_interfaces_demo__action__Progress_Goal__fini(base_interfaces_demo__action__
  */
 ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
 base_interfaces_demo__action__Progress_Goal *
-base_interfaces_demo__action__Progress_Goal__create();
+base_interfaces_demo__action__Progress_Goal__create(void);
 
 /// Destroy action/Progress message.
 /**
@@ -92,6 +125,30 @@ bool
 base_interfaces_demo__action__Progress_Goal__copy(
   const base_interfaces_demo__action__Progress_Goal * input,
   base_interfaces_demo__action__Progress_Goal * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_type_hash_t *
+base_interfaces_demo__action__Progress_Goal__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeDescription *
+base_interfaces_demo__action__Progress_Goal__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource *
+base_interfaces_demo__action__Progress_Goal__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+base_interfaces_demo__action__Progress_Goal__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of action/Progress messages.
 /**
@@ -205,7 +262,7 @@ base_interfaces_demo__action__Progress_Result__fini(base_interfaces_demo__action
  */
 ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
 base_interfaces_demo__action__Progress_Result *
-base_interfaces_demo__action__Progress_Result__create();
+base_interfaces_demo__action__Progress_Result__create(void);
 
 /// Destroy action/Progress message.
 /**
@@ -244,6 +301,30 @@ bool
 base_interfaces_demo__action__Progress_Result__copy(
   const base_interfaces_demo__action__Progress_Result * input,
   base_interfaces_demo__action__Progress_Result * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_type_hash_t *
+base_interfaces_demo__action__Progress_Result__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeDescription *
+base_interfaces_demo__action__Progress_Result__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource *
+base_interfaces_demo__action__Progress_Result__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+base_interfaces_demo__action__Progress_Result__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of action/Progress messages.
 /**
@@ -357,7 +438,7 @@ base_interfaces_demo__action__Progress_Feedback__fini(base_interfaces_demo__acti
  */
 ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
 base_interfaces_demo__action__Progress_Feedback *
-base_interfaces_demo__action__Progress_Feedback__create();
+base_interfaces_demo__action__Progress_Feedback__create(void);
 
 /// Destroy action/Progress message.
 /**
@@ -396,6 +477,30 @@ bool
 base_interfaces_demo__action__Progress_Feedback__copy(
   const base_interfaces_demo__action__Progress_Feedback * input,
   base_interfaces_demo__action__Progress_Feedback * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_type_hash_t *
+base_interfaces_demo__action__Progress_Feedback__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeDescription *
+base_interfaces_demo__action__Progress_Feedback__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource *
+base_interfaces_demo__action__Progress_Feedback__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+base_interfaces_demo__action__Progress_Feedback__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of action/Progress messages.
 /**
@@ -474,6 +579,30 @@ base_interfaces_demo__action__Progress_Feedback__Sequence__copy(
   const base_interfaces_demo__action__Progress_Feedback__Sequence * input,
   base_interfaces_demo__action__Progress_Feedback__Sequence * output);
 
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_type_hash_t *
+base_interfaces_demo__action__Progress_SendGoal__get_type_hash(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeDescription *
+base_interfaces_demo__action__Progress_SendGoal__get_type_description(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource *
+base_interfaces_demo__action__Progress_SendGoal__get_individual_type_description_source(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+base_interfaces_demo__action__Progress_SendGoal__get_type_description_sources(
+  const rosidl_service_type_support_t * type_support);
+
 /// Initialize action/Progress message.
 /**
  * If the init function is called twice for the same message without
@@ -509,7 +638,7 @@ base_interfaces_demo__action__Progress_SendGoal_Request__fini(base_interfaces_de
  */
 ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
 base_interfaces_demo__action__Progress_SendGoal_Request *
-base_interfaces_demo__action__Progress_SendGoal_Request__create();
+base_interfaces_demo__action__Progress_SendGoal_Request__create(void);
 
 /// Destroy action/Progress message.
 /**
@@ -548,6 +677,30 @@ bool
 base_interfaces_demo__action__Progress_SendGoal_Request__copy(
   const base_interfaces_demo__action__Progress_SendGoal_Request * input,
   base_interfaces_demo__action__Progress_SendGoal_Request * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_type_hash_t *
+base_interfaces_demo__action__Progress_SendGoal_Request__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeDescription *
+base_interfaces_demo__action__Progress_SendGoal_Request__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource *
+base_interfaces_demo__action__Progress_SendGoal_Request__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+base_interfaces_demo__action__Progress_SendGoal_Request__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of action/Progress messages.
 /**
@@ -661,7 +814,7 @@ base_interfaces_demo__action__Progress_SendGoal_Response__fini(base_interfaces_d
  */
 ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
 base_interfaces_demo__action__Progress_SendGoal_Response *
-base_interfaces_demo__action__Progress_SendGoal_Response__create();
+base_interfaces_demo__action__Progress_SendGoal_Response__create(void);
 
 /// Destroy action/Progress message.
 /**
@@ -700,6 +853,30 @@ bool
 base_interfaces_demo__action__Progress_SendGoal_Response__copy(
   const base_interfaces_demo__action__Progress_SendGoal_Response * input,
   base_interfaces_demo__action__Progress_SendGoal_Response * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_type_hash_t *
+base_interfaces_demo__action__Progress_SendGoal_Response__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeDescription *
+base_interfaces_demo__action__Progress_SendGoal_Response__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource *
+base_interfaces_demo__action__Progress_SendGoal_Response__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+base_interfaces_demo__action__Progress_SendGoal_Response__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of action/Progress messages.
 /**
@@ -785,6 +962,206 @@ base_interfaces_demo__action__Progress_SendGoal_Response__Sequence__copy(
  * \param[in,out] msg The previously allocated message pointer.
  * Fields without a default value will not be initialized by this function.
  * You might want to call memset(msg, 0, sizeof(
+ * base_interfaces_demo__action__Progress_SendGoal_Event
+ * )) before or use
+ * base_interfaces_demo__action__Progress_SendGoal_Event__create()
+ * to allocate and initialize the message.
+ * \return true if initialization was successful, otherwise false
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+bool
+base_interfaces_demo__action__Progress_SendGoal_Event__init(base_interfaces_demo__action__Progress_SendGoal_Event * msg);
+
+/// Finalize action/Progress message.
+/**
+ * \param[in,out] msg The allocated message pointer.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+void
+base_interfaces_demo__action__Progress_SendGoal_Event__fini(base_interfaces_demo__action__Progress_SendGoal_Event * msg);
+
+/// Create action/Progress message.
+/**
+ * It allocates the memory for the message, sets the memory to zero, and
+ * calls
+ * base_interfaces_demo__action__Progress_SendGoal_Event__init().
+ * \return The pointer to the initialized message if successful,
+ * otherwise NULL
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+base_interfaces_demo__action__Progress_SendGoal_Event *
+base_interfaces_demo__action__Progress_SendGoal_Event__create(void);
+
+/// Destroy action/Progress message.
+/**
+ * It calls
+ * base_interfaces_demo__action__Progress_SendGoal_Event__fini()
+ * and frees the memory of the message.
+ * \param[in,out] msg The allocated message pointer.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+void
+base_interfaces_demo__action__Progress_SendGoal_Event__destroy(base_interfaces_demo__action__Progress_SendGoal_Event * msg);
+
+/// Check for action/Progress message equality.
+/**
+ * \param[in] lhs The message on the left hand size of the equality operator.
+ * \param[in] rhs The message on the right hand size of the equality operator.
+ * \return true if messages are equal, otherwise false.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+bool
+base_interfaces_demo__action__Progress_SendGoal_Event__are_equal(const base_interfaces_demo__action__Progress_SendGoal_Event * lhs, const base_interfaces_demo__action__Progress_SendGoal_Event * rhs);
+
+/// Copy a action/Progress message.
+/**
+ * This functions performs a deep copy, as opposed to the shallow copy that
+ * plain assignment yields.
+ *
+ * \param[in] input The source message pointer.
+ * \param[out] output The target message pointer, which must
+ *   have been initialized before calling this function.
+ * \return true if successful, or false if either pointer is null
+ *   or memory allocation fails.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+bool
+base_interfaces_demo__action__Progress_SendGoal_Event__copy(
+  const base_interfaces_demo__action__Progress_SendGoal_Event * input,
+  base_interfaces_demo__action__Progress_SendGoal_Event * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_type_hash_t *
+base_interfaces_demo__action__Progress_SendGoal_Event__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeDescription *
+base_interfaces_demo__action__Progress_SendGoal_Event__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource *
+base_interfaces_demo__action__Progress_SendGoal_Event__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+base_interfaces_demo__action__Progress_SendGoal_Event__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
+
+/// Initialize array of action/Progress messages.
+/**
+ * It allocates the memory for the number of elements and calls
+ * base_interfaces_demo__action__Progress_SendGoal_Event__init()
+ * for each element of the array.
+ * \param[in,out] array The allocated array pointer.
+ * \param[in] size The size / capacity of the array.
+ * \return true if initialization was successful, otherwise false
+ * If the array pointer is valid and the size is zero it is guaranteed
+ # to return true.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+bool
+base_interfaces_demo__action__Progress_SendGoal_Event__Sequence__init(base_interfaces_demo__action__Progress_SendGoal_Event__Sequence * array, size_t size);
+
+/// Finalize array of action/Progress messages.
+/**
+ * It calls
+ * base_interfaces_demo__action__Progress_SendGoal_Event__fini()
+ * for each element of the array and frees the memory for the number of
+ * elements.
+ * \param[in,out] array The initialized array pointer.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+void
+base_interfaces_demo__action__Progress_SendGoal_Event__Sequence__fini(base_interfaces_demo__action__Progress_SendGoal_Event__Sequence * array);
+
+/// Create array of action/Progress messages.
+/**
+ * It allocates the memory for the array and calls
+ * base_interfaces_demo__action__Progress_SendGoal_Event__Sequence__init().
+ * \param[in] size The size / capacity of the array.
+ * \return The pointer to the initialized array if successful, otherwise NULL
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+base_interfaces_demo__action__Progress_SendGoal_Event__Sequence *
+base_interfaces_demo__action__Progress_SendGoal_Event__Sequence__create(size_t size);
+
+/// Destroy array of action/Progress messages.
+/**
+ * It calls
+ * base_interfaces_demo__action__Progress_SendGoal_Event__Sequence__fini()
+ * on the array,
+ * and frees the memory of the array.
+ * \param[in,out] array The initialized array pointer.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+void
+base_interfaces_demo__action__Progress_SendGoal_Event__Sequence__destroy(base_interfaces_demo__action__Progress_SendGoal_Event__Sequence * array);
+
+/// Check for action/Progress message array equality.
+/**
+ * \param[in] lhs The message array on the left hand size of the equality operator.
+ * \param[in] rhs The message array on the right hand size of the equality operator.
+ * \return true if message arrays are equal in size and content, otherwise false.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+bool
+base_interfaces_demo__action__Progress_SendGoal_Event__Sequence__are_equal(const base_interfaces_demo__action__Progress_SendGoal_Event__Sequence * lhs, const base_interfaces_demo__action__Progress_SendGoal_Event__Sequence * rhs);
+
+/// Copy an array of action/Progress messages.
+/**
+ * This functions performs a deep copy, as opposed to the shallow copy that
+ * plain assignment yields.
+ *
+ * \param[in] input The source array pointer.
+ * \param[out] output The target array pointer, which must
+ *   have been initialized before calling this function.
+ * \return true if successful, or false if either pointer
+ *   is null or memory allocation fails.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+bool
+base_interfaces_demo__action__Progress_SendGoal_Event__Sequence__copy(
+  const base_interfaces_demo__action__Progress_SendGoal_Event__Sequence * input,
+  base_interfaces_demo__action__Progress_SendGoal_Event__Sequence * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_type_hash_t *
+base_interfaces_demo__action__Progress_GetResult__get_type_hash(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeDescription *
+base_interfaces_demo__action__Progress_GetResult__get_type_description(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource *
+base_interfaces_demo__action__Progress_GetResult__get_individual_type_description_source(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+base_interfaces_demo__action__Progress_GetResult__get_type_description_sources(
+  const rosidl_service_type_support_t * type_support);
+
+/// Initialize action/Progress message.
+/**
+ * If the init function is called twice for the same message without
+ * calling fini inbetween previously allocated memory will be leaked.
+ * \param[in,out] msg The previously allocated message pointer.
+ * Fields without a default value will not be initialized by this function.
+ * You might want to call memset(msg, 0, sizeof(
  * base_interfaces_demo__action__Progress_GetResult_Request
  * )) before or use
  * base_interfaces_demo__action__Progress_GetResult_Request__create()
@@ -813,7 +1190,7 @@ base_interfaces_demo__action__Progress_GetResult_Request__fini(base_interfaces_d
  */
 ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
 base_interfaces_demo__action__Progress_GetResult_Request *
-base_interfaces_demo__action__Progress_GetResult_Request__create();
+base_interfaces_demo__action__Progress_GetResult_Request__create(void);
 
 /// Destroy action/Progress message.
 /**
@@ -852,6 +1229,30 @@ bool
 base_interfaces_demo__action__Progress_GetResult_Request__copy(
   const base_interfaces_demo__action__Progress_GetResult_Request * input,
   base_interfaces_demo__action__Progress_GetResult_Request * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_type_hash_t *
+base_interfaces_demo__action__Progress_GetResult_Request__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeDescription *
+base_interfaces_demo__action__Progress_GetResult_Request__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource *
+base_interfaces_demo__action__Progress_GetResult_Request__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+base_interfaces_demo__action__Progress_GetResult_Request__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of action/Progress messages.
 /**
@@ -965,7 +1366,7 @@ base_interfaces_demo__action__Progress_GetResult_Response__fini(base_interfaces_
  */
 ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
 base_interfaces_demo__action__Progress_GetResult_Response *
-base_interfaces_demo__action__Progress_GetResult_Response__create();
+base_interfaces_demo__action__Progress_GetResult_Response__create(void);
 
 /// Destroy action/Progress message.
 /**
@@ -1004,6 +1405,30 @@ bool
 base_interfaces_demo__action__Progress_GetResult_Response__copy(
   const base_interfaces_demo__action__Progress_GetResult_Response * input,
   base_interfaces_demo__action__Progress_GetResult_Response * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_type_hash_t *
+base_interfaces_demo__action__Progress_GetResult_Response__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeDescription *
+base_interfaces_demo__action__Progress_GetResult_Response__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource *
+base_interfaces_demo__action__Progress_GetResult_Response__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+base_interfaces_demo__action__Progress_GetResult_Response__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of action/Progress messages.
 /**
@@ -1089,6 +1514,182 @@ base_interfaces_demo__action__Progress_GetResult_Response__Sequence__copy(
  * \param[in,out] msg The previously allocated message pointer.
  * Fields without a default value will not be initialized by this function.
  * You might want to call memset(msg, 0, sizeof(
+ * base_interfaces_demo__action__Progress_GetResult_Event
+ * )) before or use
+ * base_interfaces_demo__action__Progress_GetResult_Event__create()
+ * to allocate and initialize the message.
+ * \return true if initialization was successful, otherwise false
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+bool
+base_interfaces_demo__action__Progress_GetResult_Event__init(base_interfaces_demo__action__Progress_GetResult_Event * msg);
+
+/// Finalize action/Progress message.
+/**
+ * \param[in,out] msg The allocated message pointer.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+void
+base_interfaces_demo__action__Progress_GetResult_Event__fini(base_interfaces_demo__action__Progress_GetResult_Event * msg);
+
+/// Create action/Progress message.
+/**
+ * It allocates the memory for the message, sets the memory to zero, and
+ * calls
+ * base_interfaces_demo__action__Progress_GetResult_Event__init().
+ * \return The pointer to the initialized message if successful,
+ * otherwise NULL
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+base_interfaces_demo__action__Progress_GetResult_Event *
+base_interfaces_demo__action__Progress_GetResult_Event__create(void);
+
+/// Destroy action/Progress message.
+/**
+ * It calls
+ * base_interfaces_demo__action__Progress_GetResult_Event__fini()
+ * and frees the memory of the message.
+ * \param[in,out] msg The allocated message pointer.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+void
+base_interfaces_demo__action__Progress_GetResult_Event__destroy(base_interfaces_demo__action__Progress_GetResult_Event * msg);
+
+/// Check for action/Progress message equality.
+/**
+ * \param[in] lhs The message on the left hand size of the equality operator.
+ * \param[in] rhs The message on the right hand size of the equality operator.
+ * \return true if messages are equal, otherwise false.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+bool
+base_interfaces_demo__action__Progress_GetResult_Event__are_equal(const base_interfaces_demo__action__Progress_GetResult_Event * lhs, const base_interfaces_demo__action__Progress_GetResult_Event * rhs);
+
+/// Copy a action/Progress message.
+/**
+ * This functions performs a deep copy, as opposed to the shallow copy that
+ * plain assignment yields.
+ *
+ * \param[in] input The source message pointer.
+ * \param[out] output The target message pointer, which must
+ *   have been initialized before calling this function.
+ * \return true if successful, or false if either pointer is null
+ *   or memory allocation fails.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+bool
+base_interfaces_demo__action__Progress_GetResult_Event__copy(
+  const base_interfaces_demo__action__Progress_GetResult_Event * input,
+  base_interfaces_demo__action__Progress_GetResult_Event * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_type_hash_t *
+base_interfaces_demo__action__Progress_GetResult_Event__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeDescription *
+base_interfaces_demo__action__Progress_GetResult_Event__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource *
+base_interfaces_demo__action__Progress_GetResult_Event__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+base_interfaces_demo__action__Progress_GetResult_Event__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
+
+/// Initialize array of action/Progress messages.
+/**
+ * It allocates the memory for the number of elements and calls
+ * base_interfaces_demo__action__Progress_GetResult_Event__init()
+ * for each element of the array.
+ * \param[in,out] array The allocated array pointer.
+ * \param[in] size The size / capacity of the array.
+ * \return true if initialization was successful, otherwise false
+ * If the array pointer is valid and the size is zero it is guaranteed
+ # to return true.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+bool
+base_interfaces_demo__action__Progress_GetResult_Event__Sequence__init(base_interfaces_demo__action__Progress_GetResult_Event__Sequence * array, size_t size);
+
+/// Finalize array of action/Progress messages.
+/**
+ * It calls
+ * base_interfaces_demo__action__Progress_GetResult_Event__fini()
+ * for each element of the array and frees the memory for the number of
+ * elements.
+ * \param[in,out] array The initialized array pointer.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+void
+base_interfaces_demo__action__Progress_GetResult_Event__Sequence__fini(base_interfaces_demo__action__Progress_GetResult_Event__Sequence * array);
+
+/// Create array of action/Progress messages.
+/**
+ * It allocates the memory for the array and calls
+ * base_interfaces_demo__action__Progress_GetResult_Event__Sequence__init().
+ * \param[in] size The size / capacity of the array.
+ * \return The pointer to the initialized array if successful, otherwise NULL
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+base_interfaces_demo__action__Progress_GetResult_Event__Sequence *
+base_interfaces_demo__action__Progress_GetResult_Event__Sequence__create(size_t size);
+
+/// Destroy array of action/Progress messages.
+/**
+ * It calls
+ * base_interfaces_demo__action__Progress_GetResult_Event__Sequence__fini()
+ * on the array,
+ * and frees the memory of the array.
+ * \param[in,out] array The initialized array pointer.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+void
+base_interfaces_demo__action__Progress_GetResult_Event__Sequence__destroy(base_interfaces_demo__action__Progress_GetResult_Event__Sequence * array);
+
+/// Check for action/Progress message array equality.
+/**
+ * \param[in] lhs The message array on the left hand size of the equality operator.
+ * \param[in] rhs The message array on the right hand size of the equality operator.
+ * \return true if message arrays are equal in size and content, otherwise false.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+bool
+base_interfaces_demo__action__Progress_GetResult_Event__Sequence__are_equal(const base_interfaces_demo__action__Progress_GetResult_Event__Sequence * lhs, const base_interfaces_demo__action__Progress_GetResult_Event__Sequence * rhs);
+
+/// Copy an array of action/Progress messages.
+/**
+ * This functions performs a deep copy, as opposed to the shallow copy that
+ * plain assignment yields.
+ *
+ * \param[in] input The source array pointer.
+ * \param[out] output The target array pointer, which must
+ *   have been initialized before calling this function.
+ * \return true if successful, or false if either pointer
+ *   is null or memory allocation fails.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+bool
+base_interfaces_demo__action__Progress_GetResult_Event__Sequence__copy(
+  const base_interfaces_demo__action__Progress_GetResult_Event__Sequence * input,
+  base_interfaces_demo__action__Progress_GetResult_Event__Sequence * output);
+
+/// Initialize action/Progress message.
+/**
+ * If the init function is called twice for the same message without
+ * calling fini inbetween previously allocated memory will be leaked.
+ * \param[in,out] msg The previously allocated message pointer.
+ * Fields without a default value will not be initialized by this function.
+ * You might want to call memset(msg, 0, sizeof(
  * base_interfaces_demo__action__Progress_FeedbackMessage
  * )) before or use
  * base_interfaces_demo__action__Progress_FeedbackMessage__create()
@@ -1117,7 +1718,7 @@ base_interfaces_demo__action__Progress_FeedbackMessage__fini(base_interfaces_dem
  */
 ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
 base_interfaces_demo__action__Progress_FeedbackMessage *
-base_interfaces_demo__action__Progress_FeedbackMessage__create();
+base_interfaces_demo__action__Progress_FeedbackMessage__create(void);
 
 /// Destroy action/Progress message.
 /**
@@ -1156,6 +1757,30 @@ bool
 base_interfaces_demo__action__Progress_FeedbackMessage__copy(
   const base_interfaces_demo__action__Progress_FeedbackMessage * input,
   base_interfaces_demo__action__Progress_FeedbackMessage * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_type_hash_t *
+base_interfaces_demo__action__Progress_FeedbackMessage__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeDescription *
+base_interfaces_demo__action__Progress_FeedbackMessage__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource *
+base_interfaces_demo__action__Progress_FeedbackMessage__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+base_interfaces_demo__action__Progress_FeedbackMessage__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of action/Progress messages.
 /**

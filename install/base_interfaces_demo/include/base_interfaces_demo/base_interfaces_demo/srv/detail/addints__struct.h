@@ -2,6 +2,9 @@
 // with input from base_interfaces_demo:srv/Addints.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "base_interfaces_demo/srv/addints.h"
+
+
 #ifndef BASE_INTERFACES_DEMO__SRV__DETAIL__ADDINTS__STRUCT_H_
 #define BASE_INTERFACES_DEMO__SRV__DETAIL__ADDINTS__STRUCT_H_
 
@@ -34,7 +37,6 @@ typedef struct base_interfaces_demo__srv__Addints_Request__Sequence
   size_t capacity;
 } base_interfaces_demo__srv__Addints_Request__Sequence;
 
-
 // Constants defined in the message
 
 /// Struct defined in srv/Addints in the package base_interfaces_demo.
@@ -52,6 +54,42 @@ typedef struct base_interfaces_demo__srv__Addints_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } base_interfaces_demo__srv__Addints_Response__Sequence;
+
+// Constants defined in the message
+
+// Include directives for member types
+// Member 'info'
+#include "service_msgs/msg/detail/service_event_info__struct.h"
+
+// constants for array fields with an upper bound
+// request
+enum
+{
+  base_interfaces_demo__srv__Addints_Event__request__MAX_SIZE = 1
+};
+// response
+enum
+{
+  base_interfaces_demo__srv__Addints_Event__response__MAX_SIZE = 1
+};
+
+/// Struct defined in srv/Addints in the package base_interfaces_demo.
+typedef struct base_interfaces_demo__srv__Addints_Event
+{
+  service_msgs__msg__ServiceEventInfo info;
+  base_interfaces_demo__srv__Addints_Request__Sequence request;
+  base_interfaces_demo__srv__Addints_Response__Sequence response;
+} base_interfaces_demo__srv__Addints_Event;
+
+// Struct for a sequence of base_interfaces_demo__srv__Addints_Event.
+typedef struct base_interfaces_demo__srv__Addints_Event__Sequence
+{
+  base_interfaces_demo__srv__Addints_Event * data;
+  /// The number of valid items in data
+  size_t size;
+  /// The number of allocated items in data
+  size_t capacity;
+} base_interfaces_demo__srv__Addints_Event__Sequence;
 
 #ifdef __cplusplus
 }
