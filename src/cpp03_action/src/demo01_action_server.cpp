@@ -54,7 +54,7 @@ public:
         rclcpp::Rate rate(1s);//设置循环频率为1Hz
         for (int i=1;i<=num;i++){
             sum+=i;
-            double progress=(double)sum/(double)num;//计算进度
+            double progress=(double)i/(double)num;//计算进度
             feedback->progress=progress;//设置反馈消息的内容
             goal_handle->publish_feedback(feedback);//发布反馈消息
             RCLCPP_INFO(this->get_logger(),"已经计算到%d，当前进度:%.2f%%",i,progress*100);

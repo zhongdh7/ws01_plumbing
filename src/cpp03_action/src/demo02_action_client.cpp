@@ -29,15 +29,40 @@ public:
     }
     //处理目标之的服务端的响应
     void goal_response_callback(rclcpp_action::ClientGoalHandle<Progress>::SharedPtr goal_handle){
-
+        //判断目标值是否被服务端接受
+        if(!goal_handle){
+            RCLCPP_ERROR(this->get_logger(),"目标被服务端拒绝");
+        }
+        else{
+            RCLCPP_INFO(this->get_logger(),"目标处理中");
+        }
     }
     //处理连续反馈
     void feedback_callback(rclcpp_action::ClientGoalHandle<Progress>::SharedPtr goal_handle,
-        const std::shared_ptr<Progress::Feedback> feedback){
-
+        const std::shared_ptr<const Progress::Feedback> feedback){
+        (void)goal_handle;
+        double progress=feedback->progress;
+        RCLCPP_INFO(this->get_logger(),"当前进度:%.2f%%",progress*100);
     }
     //处理最终结果
-    void result_callback(){
+    void result_callback(const rclcpp_action::ClientGoalHandle<Progress>::WrappedResult& result){
+        // (void)result;
+        //通过状态码判断结果状态
+        rclcpp_action::ResultCode code=result.code;
+        switch(code){
+            case rclcpp_action::ResultCode::SUCCEEDED:
+                RCLCPP_INFO(this->get_logger(),"最终结果:%d",result.result->sum);
+                break;
+            case rclcpp_action::ResultCode::ABORTED:
+                RCLCPP_ERROR(this->get_logger(),"目标执行失败");
+                break;
+            case rclcpp_action::ResultCode::CANCELED:
+                RCLCPP_ERROR(this->get_logger(),"目标被取消");
+                break;
+            default:
+                RCLCPP_ERROR(this->get_logger(),"未知状态码");
+                break;
+        }
 
     }
 private:
