@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target demo_stu_cpp_publisher[0m
+[ 25%] Built target demo_str_cpp_listener
+[ 50%] Built target demo_str_cpp_publisher
+[ 62%] [32m[1mLinking CXX executable demo_stu_cpp_listener[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/demo_stu_cpp_publisher.dir/src/demo_stu_cpp_publisher.cpp.o[0m

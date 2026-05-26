@@ -1,0 +1,28 @@
+[0.023s] Invoking command in '/home/loser/ws01_plumbing/build/cpp01_topic': CMAKE_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:/home/loser/ws01_plumbing/install/cpp02_service:/home/loser/ws01_plumbing/install/cpp01_topic:/home/loser/ws01_plumbing/install/py02_service:/home/loser/ws01_plumbing/install/py01_topic:/opt/ros/humble /usr/bin/cmake --build /home/loser/ws01_plumbing/build/cpp01_topic -- -j4 -l4
+[0.119s] [ 25%] Built target demo_stu_cpp_listener
+[0.119s] [ 50%] Built target demo_str_cpp_publisher
+[0.121s] [ 75%] Built target demo_str_cpp_listener
+[0.121s] [100%] Built target demo_stu_cpp_publisher
+[0.372s] Invoked command in '/home/loser/ws01_plumbing/build/cpp01_topic' returned '0': CMAKE_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:/home/loser/ws01_plumbing/install/cpp02_service:/home/loser/ws01_plumbing/install/cpp01_topic:/home/loser/ws01_plumbing/install/py02_service:/home/loser/ws01_plumbing/install/py01_topic:/opt/ros/humble /usr/bin/cmake --build /home/loser/ws01_plumbing/build/cpp01_topic -- -j4 -l4
+[0.375s] Invoking command in '/home/loser/ws01_plumbing/build/cpp01_topic': CMAKE_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:/home/loser/ws01_plumbing/install/cpp02_service:/home/loser/ws01_plumbing/install/cpp01_topic:/home/loser/ws01_plumbing/install/py02_service:/home/loser/ws01_plumbing/install/py01_topic:/opt/ros/humble /usr/bin/cmake --install /home/loser/ws01_plumbing/build/cpp01_topic
+[0.379s] -- Install configuration: ""
+[0.379s] -- Up-to-date: /home/loser/ws01_plumbing/install/cpp01_topic/lib/cpp01_topic/demo_str_cpp_publisher
+[0.379s] -- Up-to-date: /home/loser/ws01_plumbing/install/cpp01_topic/lib/cpp01_topic/demo_str_cpp_listener
+[0.379s] -- Up-to-date: /home/loser/ws01_plumbing/install/cpp01_topic/lib/cpp01_topic/demo_stu_cpp_publisher
+[0.379s] -- Up-to-date: /home/loser/ws01_plumbing/install/cpp01_topic/lib/cpp01_topic/demo_stu_cpp_listener
+[0.380s] -- Up-to-date: /home/loser/ws01_plumbing/install/cpp01_topic/share/ament_index/resource_index/package_run_dependencies/cpp01_topic
+[0.380s] -- Up-to-date: /home/loser/ws01_plumbing/install/cpp01_topic/share/ament_index/resource_index/parent_prefix_path/cpp01_topic
+[0.380s] -- Up-to-date: /home/loser/ws01_plumbing/install/cpp01_topic/share/cpp01_topic/environment/ament_prefix_path.sh
+[0.380s] -- Up-to-date: /home/loser/ws01_plumbing/install/cpp01_topic/share/cpp01_topic/environment/ament_prefix_path.dsv
+[0.380s] -- Up-to-date: /home/loser/ws01_plumbing/install/cpp01_topic/share/cpp01_topic/environment/path.sh
+[0.380s] -- Up-to-date: /home/loser/ws01_plumbing/install/cpp01_topic/share/cpp01_topic/environment/path.dsv
+[0.380s] -- Up-to-date: /home/loser/ws01_plumbing/install/cpp01_topic/share/cpp01_topic/local_setup.bash
+[0.380s] -- Up-to-date: /home/loser/ws01_plumbing/install/cpp01_topic/share/cpp01_topic/local_setup.sh
+[0.380s] -- Up-to-date: /home/loser/ws01_plumbing/install/cpp01_topic/share/cpp01_topic/local_setup.zsh
+[0.380s] -- Up-to-date: /home/loser/ws01_plumbing/install/cpp01_topic/share/cpp01_topic/local_setup.dsv
+[0.380s] -- Installing: /home/loser/ws01_plumbing/install/cpp01_topic/share/cpp01_topic/package.dsv
+[0.380s] -- Up-to-date: /home/loser/ws01_plumbing/install/cpp01_topic/share/ament_index/resource_index/packages/cpp01_topic
+[0.380s] -- Up-to-date: /home/loser/ws01_plumbing/install/cpp01_topic/share/cpp01_topic/cmake/cpp01_topicConfig.cmake
+[0.380s] -- Up-to-date: /home/loser/ws01_plumbing/install/cpp01_topic/share/cpp01_topic/cmake/cpp01_topicConfig-version.cmake
+[0.381s] -- Up-to-date: /home/loser/ws01_plumbing/install/cpp01_topic/share/cpp01_topic/package.xml
+[0.381s] Invoked command in '/home/loser/ws01_plumbing/build/cpp01_topic' returned '0': CMAKE_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:/home/loser/ws01_plumbing/install/cpp02_service:/home/loser/ws01_plumbing/install/cpp01_topic:/home/loser/ws01_plumbing/install/py02_service:/home/loser/ws01_plumbing/install/py01_topic:/opt/ros/humble /usr/bin/cmake --install /home/loser/ws01_plumbing/build/cpp01_topic

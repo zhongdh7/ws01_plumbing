@@ -1,0 +1,16 @@
+[0.013s] Invoking command in '/home/loser/ws01_plumbing/build/cpp01_topic': CMAKE_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:/home/loser/ws01_plumbing/install/cpp01_topic:/home/loser/ws01_plumbing/install/py01_topic:/opt/ros/humble LD_LIBRARY_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loser/ws01_plumbing/install/base_interfaces_demo/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/loser/ws01_plumbing/build/cpp01_topic -- -j4 -l4
+[0.070s] [35m[1mConsolidate compiler generated dependencies of target demo_stu_cpp_publisher[0m
+[0.077s] [ 12%] [32m[1mLinking CXX executable demo_stu_cpp_listener[0m
+[0.082s] [ 37%] Built target demo_str_cpp_listener
+[0.083s] [ 62%] Built target demo_str_cpp_publisher
+[0.092s] [ 75%] [32mBuilding CXX object CMakeFiles/demo_stu_cpp_publisher.dir/src/demo_stu_cpp_publisher.cpp.o[0m
+[0.124s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[0.124s] (.text+0x1b): undefined reference to `main'
+[0.127s] collect2: error: ld returned 1 exit status
+[0.128s] gmake[2]: *** [CMakeFiles/demo_stu_cpp_listener.dir/build.make:167：demo_stu_cpp_listener] 错误 1
+[0.128s] gmake[1]: *** [CMakeFiles/Makefile2:221：CMakeFiles/demo_stu_cpp_listener.dir/all] 错误 2
+[0.128s] gmake[1]: *** 正在等待未完成的任务....
+[2.923s] [ 87%] [32m[1mLinking CXX executable demo_stu_cpp_publisher[0m
+[3.104s] [ 87%] Built target demo_stu_cpp_publisher
+[3.105s] gmake: *** [Makefile:146：all] 错误 2
+[3.107s] Invoked command in '/home/loser/ws01_plumbing/build/cpp01_topic' returned '2': CMAKE_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:/home/loser/ws01_plumbing/install/cpp01_topic:/home/loser/ws01_plumbing/install/py01_topic:/opt/ros/humble LD_LIBRARY_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loser/ws01_plumbing/install/base_interfaces_demo/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/loser/ws01_plumbing/build/cpp01_topic -- -j4 -l4

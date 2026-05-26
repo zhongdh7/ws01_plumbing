@@ -1,0 +1,36 @@
+[35m[1mConsolidate compiler generated dependencies of target demo_stu_cpp_publisher[0m
+[ 12%] [32m[1mLinking CXX executable demo_stu_cpp_listener[0m
+[ 37%] Built target demo_str_cpp_publisher
+[ 50%] [32mBuilding CXX object CMakeFiles/demo_stu_cpp_publisher.dir/src/demo_stu_cpp_publisher.cpp.o[0m
+[ 75%] Built target demo_str_cpp_listener
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/demo_stu_cpp_listener.dir/build.make:167：demo_stu_cpp_listener] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:221：CMakeFiles/demo_stu_cpp_listener.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+[01m[K/home/loser/ws01_plumbing/src/cpp01_topic/src/demo_stu_cpp_publisher.cpp:[m[K In constructor ‘[01m[KPublisherNode::PublisherNode(const string&)[m[K’:
+[01m[K/home/loser/ws01_plumbing/src/cpp01_topic/src/demo_stu_cpp_publisher.cpp:10:9:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP[m[K’ was not declared in this scope
+   10 |         [01;31m[KRCLCPP[m[K(this->get_logger(),"发布方已创建....");
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/loser/ws01_plumbing/src/cpp01_topic/src/demo_stu_cpp_publisher.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/loser/ws01_plumbing/src/cpp01_topic/src/demo_stu_cpp_publisher.cpp:21:17:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kspin(PublisherNode&)[m[K’
+   21 |     [01;31m[Krclcpp::spin(node)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/loser/ws01_plumbing/src/cpp01_topic/src/demo_stu_cpp_publisher.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:45:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::spin(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr)[m[K’
+   45 | [01;36m[Kspin[m[K(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr);
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:45:60:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KPublisherNode[m[K’ to ‘[01m[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::node_interfaces::NodeBaseInterface>[m[K’}
+   45 | spin([01;36m[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr[m[K);
+      |      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:49:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::spin(rclcpp::Node::SharedPtr)[m[K’
+   49 | [01;36m[Kspin[m[K(rclcpp::Node::SharedPtr node_ptr);
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:49:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KPublisherNode[m[K’ to ‘[01m[Krclcpp::Node::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’}
+   49 | spin([01;36m[Krclcpp::Node::SharedPtr node_ptr[m[K);
+      |      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/demo_stu_cpp_publisher.dir/build.make:76：CMakeFiles/demo_stu_cpp_publisher.dir/src/demo_stu_cpp_publisher.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:195：CMakeFiles/demo_stu_cpp_publisher.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

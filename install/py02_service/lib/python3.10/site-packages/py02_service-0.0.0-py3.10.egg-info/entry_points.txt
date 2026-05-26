@@ -1,0 +1,4 @@
+[console_scripts]
+demo01_server = py02_service.demo01_server:main
+demo02_listener = py02_service.demo02_listener:main
+

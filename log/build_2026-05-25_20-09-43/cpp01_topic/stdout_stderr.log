@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target demo_stu_cpp_publisher[0m
+[ 25%] Built target demo_str_cpp_publisher
+[ 37%] [32m[1mLinking CXX executable demo_stu_cpp_listener[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/demo_stu_cpp_publisher.dir/src/demo_stu_cpp_publisher.cpp.o[0m
+[ 75%] Built target demo_str_cpp_listener
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/demo_stu_cpp_listener.dir/build.make:167：demo_stu_cpp_listener] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:221：CMakeFiles/demo_stu_cpp_listener.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+[ 87%] [32m[1mLinking CXX executable demo_stu_cpp_publisher[0m
+[ 87%] Built target demo_stu_cpp_publisher
+gmake: *** [Makefile:146：all] 错误 2

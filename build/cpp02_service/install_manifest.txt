@@ -1,0 +1,17 @@
+/home/loser/ws01_plumbing/install/cpp02_service/lib/cpp02_service/demo01_server
+/home/loser/ws01_plumbing/install/cpp02_service/lib/cpp02_service/demo02_client
+/home/loser/ws01_plumbing/install/cpp02_service/share/ament_index/resource_index/package_run_dependencies/cpp02_service
+/home/loser/ws01_plumbing/install/cpp02_service/share/ament_index/resource_index/parent_prefix_path/cpp02_service
+/home/loser/ws01_plumbing/install/cpp02_service/share/cpp02_service/environment/ament_prefix_path.sh
+/home/loser/ws01_plumbing/install/cpp02_service/share/cpp02_service/environment/ament_prefix_path.dsv
+/home/loser/ws01_plumbing/install/cpp02_service/share/cpp02_service/environment/path.sh
+/home/loser/ws01_plumbing/install/cpp02_service/share/cpp02_service/environment/path.dsv
+/home/loser/ws01_plumbing/install/cpp02_service/share/cpp02_service/local_setup.bash
+/home/loser/ws01_plumbing/install/cpp02_service/share/cpp02_service/local_setup.sh
+/home/loser/ws01_plumbing/install/cpp02_service/share/cpp02_service/local_setup.zsh
+/home/loser/ws01_plumbing/install/cpp02_service/share/cpp02_service/local_setup.dsv
+/home/loser/ws01_plumbing/install/cpp02_service/share/cpp02_service/package.dsv
+/home/loser/ws01_plumbing/install/cpp02_service/share/ament_index/resource_index/packages/cpp02_service
+/home/loser/ws01_plumbing/install/cpp02_service/share/cpp02_service/cmake/cpp02_serviceConfig.cmake
+/home/loser/ws01_plumbing/install/cpp02_service/share/cpp02_service/cmake/cpp02_serviceConfig-version.cmake
+/home/loser/ws01_plumbing/install/cpp02_service/share/cpp02_service/package.xml

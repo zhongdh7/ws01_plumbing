@@ -1,0 +1,62 @@
+[0.010s] Invoking command in '/home/loser/ws01_plumbing/build/cpp01_topic': CMAKE_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:/home/loser/ws01_plumbing/install/cpp01_topic:/home/loser/ws01_plumbing/install/py01_topic:/opt/ros/humble LD_LIBRARY_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loser/ws01_plumbing/install/base_interfaces_demo/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/loser/ws01_plumbing/build/cpp01_topic -- -j4 -l4
+[0.144s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.144s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.144s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.144s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.144s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.144s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.144s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.147s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.150s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.206s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.230s] -- Found base_interfaces_demo: 0.0.0 (/home/loser/ws01_plumbing/install/base_interfaces_demo/share/base_interfaces_demo/cmake)
+[0.237s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.274s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.274s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/loser/ws01_plumbing/src/cpp01_topic/include>
+[0.274s] -- Configured cppcheck exclude dirs and/or files: 
+[0.274s] -- Added test 'lint_cmake' to check CMake code style
+[0.275s] -- Added test 'uncrustify' to check C / C++ code style
+[0.275s] -- Configured uncrustify additional arguments: 
+[0.275s] -- Added test 'xmllint' to check XML markup files
+[0.275s] -- Configuring done
+[0.287s] -- Generating done
+[0.292s] -- Build files have been written to: /home/loser/ws01_plumbing/build/cpp01_topic
+[0.322s] [35m[1mConsolidate compiler generated dependencies of target demo_str_cpp_publisher[0m
+[0.329s] [ 12%] [32mBuilding CXX object CMakeFiles/demo_stu_cpp_publisher.dir/src/demo_stu_cpp_publisher.cpp.o[0m
+[0.329s] [35m[1mConsolidate compiler generated dependencies of target demo_str_cpp_listener[0m
+[0.336s] [ 25%] [32mBuilding CXX object CMakeFiles/demo_stu_cpp_listener.dir/src/demo_stu_cpp_listener.cpp.o[0m
+[0.343s] [ 50%] Built target demo_str_cpp_publisher
+[0.348s] [ 75%] Built target demo_str_cpp_listener
+[0.355s] [ 87%] [32m[1mLinking CXX executable demo_stu_cpp_listener[0m
+[0.390s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[0.390s] (.text+0x1b): undefined reference to `main'
+[0.392s] collect2: error: ld returned 1 exit status
+[0.392s] gmake[2]: *** [CMakeFiles/demo_stu_cpp_listener.dir/build.make:167：demo_stu_cpp_listener] 错误 1
+[0.394s] gmake[1]: *** [CMakeFiles/Makefile2:221：CMakeFiles/demo_stu_cpp_listener.dir/all] 错误 2
+[0.394s] gmake[1]: *** 正在等待未完成的任务....
+[1.765s] [01m[K/home/loser/ws01_plumbing/src/cpp01_topic/src/demo_stu_cpp_publisher.cpp:[m[K In constructor ‘[01m[KPublisherNode::PublisherNode(const string&)[m[K’:
+[1.766s] [01m[K/home/loser/ws01_plumbing/src/cpp01_topic/src/demo_stu_cpp_publisher.cpp:10:9:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP[m[K’ was not declared in this scope
+[1.766s]    10 |         [01;31m[KRCLCPP[m[K(this->get_logger(),"发布方已创建....");
+[1.766s]       |         [01;31m[K^~~~~~[m[K
+[1.767s] [01m[K/home/loser/ws01_plumbing/src/cpp01_topic/src/demo_stu_cpp_publisher.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.767s] [01m[K/home/loser/ws01_plumbing/src/cpp01_topic/src/demo_stu_cpp_publisher.cpp:20:17:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kspin(PublisherNode&)[m[K’
+[1.767s]    20 |     [01;31m[Krclcpp::spin(node)[m[K;
+[1.767s]       |     [01;31m[K~~~~~~~~~~~~^~~~~~[m[K
+[1.767s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.767s]                  from [01m[K/home/loser/ws01_plumbing/src/cpp01_topic/src/demo_stu_cpp_publisher.cpp:1[m[K:
+[1.767s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:45:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::spin(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr)[m[K’
+[1.767s]    45 | [01;36m[Kspin[m[K(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr);
+[1.768s]       | [01;36m[K^~~~[m[K
+[1.768s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:45:60:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KPublisherNode[m[K’ to ‘[01m[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::node_interfaces::NodeBaseInterface>[m[K’}
+[1.768s]    45 | spin([01;36m[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr[m[K);
+[1.768s]       |      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[1.768s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:49:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::spin(rclcpp::Node::SharedPtr)[m[K’
+[1.768s]    49 | [01;36m[Kspin[m[K(rclcpp::Node::SharedPtr node_ptr);
+[1.768s]       | [01;36m[K^~~~[m[K
+[1.768s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:49:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KPublisherNode[m[K’ to ‘[01m[Krclcpp::Node::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’}
+[1.768s]    49 | spin([01;36m[Krclcpp::Node::SharedPtr node_ptr[m[K);
+[1.768s]       |      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[2.060s] gmake[2]: *** [CMakeFiles/demo_stu_cpp_publisher.dir/build.make:76：CMakeFiles/demo_stu_cpp_publisher.dir/src/demo_stu_cpp_publisher.cpp.o] 错误 1
+[2.061s] gmake[1]: *** [CMakeFiles/Makefile2:195：CMakeFiles/demo_stu_cpp_publisher.dir/all] 错误 2
+[2.061s] gmake: *** [Makefile:146：all] 错误 2
+[2.062s] Invoked command in '/home/loser/ws01_plumbing/build/cpp01_topic' returned '2': CMAKE_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:/home/loser/ws01_plumbing/install/cpp01_topic:/home/loser/ws01_plumbing/install/py01_topic:/opt/ros/humble LD_LIBRARY_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loser/ws01_plumbing/install/base_interfaces_demo/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/loser/ws01_plumbing/build/cpp01_topic -- -j4 -l4
