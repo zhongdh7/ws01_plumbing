@@ -4,7 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/opt/ros/humble/include/**",
+                "/opt/ros/jazzy/include/**",
                 "${workspaceFolder}/install/base_interfaces_demo/include/**"
             ],
             "defines": [],

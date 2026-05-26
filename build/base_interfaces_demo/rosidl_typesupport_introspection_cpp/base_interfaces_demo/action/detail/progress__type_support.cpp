@@ -9,6 +9,7 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_cpp/message_type_support.hpp"
 #include "rosidl_typesupport_interface/macros.h"
+#include "base_interfaces_demo/action/detail/progress__functions.h"
 #include "base_interfaces_demo/action/detail/progress__struct.hpp"
 #include "rosidl_typesupport_introspection_cpp/field_types.hpp"
 #include "rosidl_typesupport_introspection_cpp/identifier.hpp"
@@ -43,6 +44,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Progress_Goal
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -62,6 +64,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMembers Progress_Goa
   "Progress_Goal",  // message name
   1,  // number of fields
   sizeof(base_interfaces_demo::action::Progress_Goal),
+  false,  // has_any_key_member_
   Progress_Goal_message_member_array,  // message members
   Progress_Goal_init_function,  // function to initialize message memory (memory has to be allocated)
   Progress_Goal_fini_function  // function to terminate message instance (will not free memory)
@@ -71,6 +74,9 @@ static const rosidl_message_type_support_t Progress_Goal_message_type_support_ha
   ::rosidl_typesupport_introspection_cpp::typesupport_identifier,
   &Progress_Goal_message_members,
   get_message_typesupport_handle_function,
+  &base_interfaces_demo__action__Progress_Goal__get_type_hash,
+  &base_interfaces_demo__action__Progress_Goal__get_type_description,
+  &base_interfaces_demo__action__Progress_Goal__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_introspection_cpp
@@ -123,6 +129,8 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // already included above
 // #include "rosidl_typesupport_interface/macros.h"
 // already included above
+// #include "base_interfaces_demo/action/detail/progress__functions.h"
+// already included above
 // #include "base_interfaces_demo/action/detail/progress__struct.hpp"
 // already included above
 // #include "rosidl_typesupport_introspection_cpp/field_types.hpp"
@@ -162,6 +170,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Progress_Resu
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -181,6 +190,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMembers Progress_Res
   "Progress_Result",  // message name
   1,  // number of fields
   sizeof(base_interfaces_demo::action::Progress_Result),
+  false,  // has_any_key_member_
   Progress_Result_message_member_array,  // message members
   Progress_Result_init_function,  // function to initialize message memory (memory has to be allocated)
   Progress_Result_fini_function  // function to terminate message instance (will not free memory)
@@ -190,6 +200,9 @@ static const rosidl_message_type_support_t Progress_Result_message_type_support_
   ::rosidl_typesupport_introspection_cpp::typesupport_identifier,
   &Progress_Result_message_members,
   get_message_typesupport_handle_function,
+  &base_interfaces_demo__action__Progress_Result__get_type_hash,
+  &base_interfaces_demo__action__Progress_Result__get_type_description,
+  &base_interfaces_demo__action__Progress_Result__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_introspection_cpp
@@ -242,6 +255,8 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // already included above
 // #include "rosidl_typesupport_interface/macros.h"
 // already included above
+// #include "base_interfaces_demo/action/detail/progress__functions.h"
+// already included above
 // #include "base_interfaces_demo/action/detail/progress__struct.hpp"
 // already included above
 // #include "rosidl_typesupport_introspection_cpp/field_types.hpp"
@@ -281,6 +296,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Progress_Feed
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -300,6 +316,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMembers Progress_Fee
   "Progress_Feedback",  // message name
   1,  // number of fields
   sizeof(base_interfaces_demo::action::Progress_Feedback),
+  false,  // has_any_key_member_
   Progress_Feedback_message_member_array,  // message members
   Progress_Feedback_init_function,  // function to initialize message memory (memory has to be allocated)
   Progress_Feedback_fini_function  // function to terminate message instance (will not free memory)
@@ -309,6 +326,9 @@ static const rosidl_message_type_support_t Progress_Feedback_message_type_suppor
   ::rosidl_typesupport_introspection_cpp::typesupport_identifier,
   &Progress_Feedback_message_members,
   get_message_typesupport_handle_function,
+  &base_interfaces_demo__action__Progress_Feedback__get_type_hash,
+  &base_interfaces_demo__action__Progress_Feedback__get_type_description,
+  &base_interfaces_demo__action__Progress_Feedback__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_introspection_cpp
@@ -361,6 +381,8 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // already included above
 // #include "rosidl_typesupport_interface/macros.h"
 // already included above
+// #include "base_interfaces_demo/action/detail/progress__functions.h"
+// already included above
 // #include "base_interfaces_demo/action/detail/progress__struct.hpp"
 // already included above
 // #include "rosidl_typesupport_introspection_cpp/field_types.hpp"
@@ -400,6 +422,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Progress_Send
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<unique_identifier_msgs::msg::UUID>(),  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -417,6 +440,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Progress_Send
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<base_interfaces_demo::action::Progress_Goal>(),  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -436,6 +460,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMembers Progress_Sen
   "Progress_SendGoal_Request",  // message name
   2,  // number of fields
   sizeof(base_interfaces_demo::action::Progress_SendGoal_Request),
+  false,  // has_any_key_member_
   Progress_SendGoal_Request_message_member_array,  // message members
   Progress_SendGoal_Request_init_function,  // function to initialize message memory (memory has to be allocated)
   Progress_SendGoal_Request_fini_function  // function to terminate message instance (will not free memory)
@@ -445,6 +470,9 @@ static const rosidl_message_type_support_t Progress_SendGoal_Request_message_typ
   ::rosidl_typesupport_introspection_cpp::typesupport_identifier,
   &Progress_SendGoal_Request_message_members,
   get_message_typesupport_handle_function,
+  &base_interfaces_demo__action__Progress_SendGoal_Request__get_type_hash,
+  &base_interfaces_demo__action__Progress_SendGoal_Request__get_type_description,
+  &base_interfaces_demo__action__Progress_SendGoal_Request__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_introspection_cpp
@@ -497,6 +525,8 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // already included above
 // #include "rosidl_typesupport_interface/macros.h"
 // already included above
+// #include "base_interfaces_demo/action/detail/progress__functions.h"
+// already included above
 // #include "base_interfaces_demo/action/detail/progress__struct.hpp"
 // already included above
 // #include "rosidl_typesupport_introspection_cpp/field_types.hpp"
@@ -536,6 +566,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Progress_Send
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -553,6 +584,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Progress_Send
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<builtin_interfaces::msg::Time>(),  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -572,6 +604,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMembers Progress_Sen
   "Progress_SendGoal_Response",  // message name
   2,  // number of fields
   sizeof(base_interfaces_demo::action::Progress_SendGoal_Response),
+  false,  // has_any_key_member_
   Progress_SendGoal_Response_message_member_array,  // message members
   Progress_SendGoal_Response_init_function,  // function to initialize message memory (memory has to be allocated)
   Progress_SendGoal_Response_fini_function  // function to terminate message instance (will not free memory)
@@ -581,6 +614,9 @@ static const rosidl_message_type_support_t Progress_SendGoal_Response_message_ty
   ::rosidl_typesupport_introspection_cpp::typesupport_identifier,
   &Progress_SendGoal_Response_message_members,
   get_message_typesupport_handle_function,
+  &base_interfaces_demo__action__Progress_SendGoal_Response__get_type_hash,
+  &base_interfaces_demo__action__Progress_SendGoal_Response__get_type_description,
+  &base_interfaces_demo__action__Progress_SendGoal_Response__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_introspection_cpp
@@ -618,7 +654,258 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 }
 #endif
 
-#include "rosidl_runtime_c/service_type_support_struct.h"
+// already included above
+// #include "array"
+// already included above
+// #include "cstddef"
+// already included above
+// #include "string"
+// already included above
+// #include "vector"
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_typesupport_cpp/message_type_support.hpp"
+// already included above
+// #include "rosidl_typesupport_interface/macros.h"
+// already included above
+// #include "base_interfaces_demo/action/detail/progress__functions.h"
+// already included above
+// #include "base_interfaces_demo/action/detail/progress__struct.hpp"
+// already included above
+// #include "rosidl_typesupport_introspection_cpp/field_types.hpp"
+// already included above
+// #include "rosidl_typesupport_introspection_cpp/identifier.hpp"
+// already included above
+// #include "rosidl_typesupport_introspection_cpp/message_introspection.hpp"
+// already included above
+// #include "rosidl_typesupport_introspection_cpp/message_type_support_decl.hpp"
+// already included above
+// #include "rosidl_typesupport_introspection_cpp/visibility_control.h"
+
+namespace base_interfaces_demo
+{
+
+namespace action
+{
+
+namespace rosidl_typesupport_introspection_cpp
+{
+
+void Progress_SendGoal_Event_init_function(
+  void * message_memory, rosidl_runtime_cpp::MessageInitialization _init)
+{
+  new (message_memory) base_interfaces_demo::action::Progress_SendGoal_Event(_init);
+}
+
+void Progress_SendGoal_Event_fini_function(void * message_memory)
+{
+  auto typed_message = static_cast<base_interfaces_demo::action::Progress_SendGoal_Event *>(message_memory);
+  typed_message->~Progress_SendGoal_Event();
+}
+
+size_t size_function__Progress_SendGoal_Event__request(const void * untyped_member)
+{
+  const auto * member = reinterpret_cast<const std::vector<base_interfaces_demo::action::Progress_SendGoal_Request> *>(untyped_member);
+  return member->size();
+}
+
+const void * get_const_function__Progress_SendGoal_Event__request(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::vector<base_interfaces_demo::action::Progress_SendGoal_Request> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__Progress_SendGoal_Event__request(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::vector<base_interfaces_demo::action::Progress_SendGoal_Request> *>(untyped_member);
+  return &member[index];
+}
+
+void fetch_function__Progress_SendGoal_Event__request(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const auto & item = *reinterpret_cast<const base_interfaces_demo::action::Progress_SendGoal_Request *>(
+    get_const_function__Progress_SendGoal_Event__request(untyped_member, index));
+  auto & value = *reinterpret_cast<base_interfaces_demo::action::Progress_SendGoal_Request *>(untyped_value);
+  value = item;
+}
+
+void assign_function__Progress_SendGoal_Event__request(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  auto & item = *reinterpret_cast<base_interfaces_demo::action::Progress_SendGoal_Request *>(
+    get_function__Progress_SendGoal_Event__request(untyped_member, index));
+  const auto & value = *reinterpret_cast<const base_interfaces_demo::action::Progress_SendGoal_Request *>(untyped_value);
+  item = value;
+}
+
+void resize_function__Progress_SendGoal_Event__request(void * untyped_member, size_t size)
+{
+  auto * member =
+    reinterpret_cast<std::vector<base_interfaces_demo::action::Progress_SendGoal_Request> *>(untyped_member);
+  member->resize(size);
+}
+
+size_t size_function__Progress_SendGoal_Event__response(const void * untyped_member)
+{
+  const auto * member = reinterpret_cast<const std::vector<base_interfaces_demo::action::Progress_SendGoal_Response> *>(untyped_member);
+  return member->size();
+}
+
+const void * get_const_function__Progress_SendGoal_Event__response(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::vector<base_interfaces_demo::action::Progress_SendGoal_Response> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__Progress_SendGoal_Event__response(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::vector<base_interfaces_demo::action::Progress_SendGoal_Response> *>(untyped_member);
+  return &member[index];
+}
+
+void fetch_function__Progress_SendGoal_Event__response(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const auto & item = *reinterpret_cast<const base_interfaces_demo::action::Progress_SendGoal_Response *>(
+    get_const_function__Progress_SendGoal_Event__response(untyped_member, index));
+  auto & value = *reinterpret_cast<base_interfaces_demo::action::Progress_SendGoal_Response *>(untyped_value);
+  value = item;
+}
+
+void assign_function__Progress_SendGoal_Event__response(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  auto & item = *reinterpret_cast<base_interfaces_demo::action::Progress_SendGoal_Response *>(
+    get_function__Progress_SendGoal_Event__response(untyped_member, index));
+  const auto & value = *reinterpret_cast<const base_interfaces_demo::action::Progress_SendGoal_Response *>(untyped_value);
+  item = value;
+}
+
+void resize_function__Progress_SendGoal_Event__response(void * untyped_member, size_t size)
+{
+  auto * member =
+    reinterpret_cast<std::vector<base_interfaces_demo::action::Progress_SendGoal_Response> *>(untyped_member);
+  member->resize(size);
+}
+
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Progress_SendGoal_Event_message_member_array[3] = {
+  {
+    "info",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<service_msgs::msg::ServiceEventInfo>(),  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(base_interfaces_demo::action::Progress_SendGoal_Event, info),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "request",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<base_interfaces_demo::action::Progress_SendGoal_Request>(),  // members of sub message
+    false,  // is key
+    true,  // is array
+    1,  // array size
+    true,  // is upper bound
+    offsetof(base_interfaces_demo::action::Progress_SendGoal_Event, request),  // bytes offset in struct
+    nullptr,  // default value
+    size_function__Progress_SendGoal_Event__request,  // size() function pointer
+    get_const_function__Progress_SendGoal_Event__request,  // get_const(index) function pointer
+    get_function__Progress_SendGoal_Event__request,  // get(index) function pointer
+    fetch_function__Progress_SendGoal_Event__request,  // fetch(index, &value) function pointer
+    assign_function__Progress_SendGoal_Event__request,  // assign(index, value) function pointer
+    resize_function__Progress_SendGoal_Event__request  // resize(index) function pointer
+  },
+  {
+    "response",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<base_interfaces_demo::action::Progress_SendGoal_Response>(),  // members of sub message
+    false,  // is key
+    true,  // is array
+    1,  // array size
+    true,  // is upper bound
+    offsetof(base_interfaces_demo::action::Progress_SendGoal_Event, response),  // bytes offset in struct
+    nullptr,  // default value
+    size_function__Progress_SendGoal_Event__response,  // size() function pointer
+    get_const_function__Progress_SendGoal_Event__response,  // get_const(index) function pointer
+    get_function__Progress_SendGoal_Event__response,  // get(index) function pointer
+    fetch_function__Progress_SendGoal_Event__response,  // fetch(index, &value) function pointer
+    assign_function__Progress_SendGoal_Event__response,  // assign(index, value) function pointer
+    resize_function__Progress_SendGoal_Event__response  // resize(index) function pointer
+  }
+};
+
+static const ::rosidl_typesupport_introspection_cpp::MessageMembers Progress_SendGoal_Event_message_members = {
+  "base_interfaces_demo::action",  // message namespace
+  "Progress_SendGoal_Event",  // message name
+  3,  // number of fields
+  sizeof(base_interfaces_demo::action::Progress_SendGoal_Event),
+  false,  // has_any_key_member_
+  Progress_SendGoal_Event_message_member_array,  // message members
+  Progress_SendGoal_Event_init_function,  // function to initialize message memory (memory has to be allocated)
+  Progress_SendGoal_Event_fini_function  // function to terminate message instance (will not free memory)
+};
+
+static const rosidl_message_type_support_t Progress_SendGoal_Event_message_type_support_handle = {
+  ::rosidl_typesupport_introspection_cpp::typesupport_identifier,
+  &Progress_SendGoal_Event_message_members,
+  get_message_typesupport_handle_function,
+  &base_interfaces_demo__action__Progress_SendGoal_Event__get_type_hash,
+  &base_interfaces_demo__action__Progress_SendGoal_Event__get_type_description,
+  &base_interfaces_demo__action__Progress_SendGoal_Event__get_type_description_sources,
+};
+
+}  // namespace rosidl_typesupport_introspection_cpp
+
+}  // namespace action
+
+}  // namespace base_interfaces_demo
+
+
+namespace rosidl_typesupport_introspection_cpp
+{
+
+template<>
+ROSIDL_TYPESUPPORT_INTROSPECTION_CPP_PUBLIC
+const rosidl_message_type_support_t *
+get_message_type_support_handle<base_interfaces_demo::action::Progress_SendGoal_Event>()
+{
+  return &::base_interfaces_demo::action::rosidl_typesupport_introspection_cpp::Progress_SendGoal_Event_message_type_support_handle;
+}
+
+}  // namespace rosidl_typesupport_introspection_cpp
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+ROSIDL_TYPESUPPORT_INTROSPECTION_CPP_PUBLIC
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_cpp, base_interfaces_demo, action, Progress_SendGoal_Event)() {
+  return &::base_interfaces_demo::action::rosidl_typesupport_introspection_cpp::Progress_SendGoal_Event_message_type_support_handle;
+}
+
+#ifdef __cplusplus
+}
+#endif
+
 // already included above
 // #include "rosidl_typesupport_cpp/message_type_support.hpp"
 #include "rosidl_typesupport_cpp/service_type_support.hpp"
@@ -626,6 +913,8 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // #include "rosidl_typesupport_interface/macros.h"
 // already included above
 // #include "rosidl_typesupport_introspection_cpp/visibility_control.h"
+// already included above
+// #include "base_interfaces_demo/action/detail/progress__functions.h"
 // already included above
 // #include "base_interfaces_demo/action/detail/progress__struct.hpp"
 // already included above
@@ -648,16 +937,25 @@ namespace rosidl_typesupport_introspection_cpp
 static ::rosidl_typesupport_introspection_cpp::ServiceMembers Progress_SendGoal_service_members = {
   "base_interfaces_demo::action",  // service namespace
   "Progress_SendGoal",  // service name
-  // these two fields are initialized below on the first access
+  // the following fields are initialized below on first access
   // see get_service_type_support_handle<base_interfaces_demo::action::Progress_SendGoal>()
   nullptr,  // request message
-  nullptr  // response message
+  nullptr,  // response message
+  nullptr,  // event message
 };
 
 static const rosidl_service_type_support_t Progress_SendGoal_service_type_support_handle = {
   ::rosidl_typesupport_introspection_cpp::typesupport_identifier,
   &Progress_SendGoal_service_members,
   get_service_typesupport_handle_function,
+  ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<base_interfaces_demo::action::Progress_SendGoal_Request>(),
+  ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<base_interfaces_demo::action::Progress_SendGoal_Response>(),
+  ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<base_interfaces_demo::action::Progress_SendGoal_Event>(),
+  &::rosidl_typesupport_cpp::service_create_event_message<base_interfaces_demo::action::Progress_SendGoal>,
+  &::rosidl_typesupport_cpp::service_destroy_event_message<base_interfaces_demo::action::Progress_SendGoal>,
+  &base_interfaces_demo__action__Progress_SendGoal__get_type_hash,
+  &base_interfaces_demo__action__Progress_SendGoal__get_type_description,
+  &base_interfaces_demo__action__Progress_SendGoal__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_introspection_cpp
@@ -682,11 +980,12 @@ get_service_type_support_handle<base_interfaces_demo::action::Progress_SendGoal>
   auto service_members = const_cast<::rosidl_typesupport_introspection_cpp::ServiceMembers *>(
     static_cast<const ::rosidl_typesupport_introspection_cpp::ServiceMembers *>(
       service_type_support->data));
-  // make sure that both the request_members_ and the response_members_ are initialized
+  // make sure all of the service_members are initialized
   // if they are not, initialize them
   if (
     service_members->request_members_ == nullptr ||
-    service_members->response_members_ == nullptr)
+    service_members->response_members_ == nullptr ||
+    service_members->event_members_ == nullptr)
   {
     // initialize the request_members_ with the static function from the external library
     service_members->request_members_ = static_cast<
@@ -702,6 +1001,14 @@ get_service_type_support_handle<base_interfaces_demo::action::Progress_SendGoal>
       >(
       ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<
         ::base_interfaces_demo::action::Progress_SendGoal_Response
+      >()->data
+      );
+    // initialize the event_members_ with the static function from the external library
+    service_members->event_members_ = static_cast<
+      const ::rosidl_typesupport_introspection_cpp::MessageMembers *
+      >(
+      ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<
+        ::base_interfaces_demo::action::Progress_SendGoal_Event
       >()->data
       );
   }
@@ -740,6 +1047,8 @@ ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // #include "rosidl_typesupport_cpp/message_type_support.hpp"
 // already included above
 // #include "rosidl_typesupport_interface/macros.h"
+// already included above
+// #include "base_interfaces_demo/action/detail/progress__functions.h"
 // already included above
 // #include "base_interfaces_demo/action/detail/progress__struct.hpp"
 // already included above
@@ -780,6 +1089,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Progress_GetR
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<unique_identifier_msgs::msg::UUID>(),  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -799,6 +1109,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMembers Progress_Get
   "Progress_GetResult_Request",  // message name
   1,  // number of fields
   sizeof(base_interfaces_demo::action::Progress_GetResult_Request),
+  false,  // has_any_key_member_
   Progress_GetResult_Request_message_member_array,  // message members
   Progress_GetResult_Request_init_function,  // function to initialize message memory (memory has to be allocated)
   Progress_GetResult_Request_fini_function  // function to terminate message instance (will not free memory)
@@ -808,6 +1119,9 @@ static const rosidl_message_type_support_t Progress_GetResult_Request_message_ty
   ::rosidl_typesupport_introspection_cpp::typesupport_identifier,
   &Progress_GetResult_Request_message_members,
   get_message_typesupport_handle_function,
+  &base_interfaces_demo__action__Progress_GetResult_Request__get_type_hash,
+  &base_interfaces_demo__action__Progress_GetResult_Request__get_type_description,
+  &base_interfaces_demo__action__Progress_GetResult_Request__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_introspection_cpp
@@ -860,6 +1174,8 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // already included above
 // #include "rosidl_typesupport_interface/macros.h"
 // already included above
+// #include "base_interfaces_demo/action/detail/progress__functions.h"
+// already included above
 // #include "base_interfaces_demo/action/detail/progress__struct.hpp"
 // already included above
 // #include "rosidl_typesupport_introspection_cpp/field_types.hpp"
@@ -899,6 +1215,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Progress_GetR
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT8,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -916,6 +1233,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Progress_GetR
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<base_interfaces_demo::action::Progress_Result>(),  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -935,6 +1253,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMembers Progress_Get
   "Progress_GetResult_Response",  // message name
   2,  // number of fields
   sizeof(base_interfaces_demo::action::Progress_GetResult_Response),
+  false,  // has_any_key_member_
   Progress_GetResult_Response_message_member_array,  // message members
   Progress_GetResult_Response_init_function,  // function to initialize message memory (memory has to be allocated)
   Progress_GetResult_Response_fini_function  // function to terminate message instance (will not free memory)
@@ -944,6 +1263,9 @@ static const rosidl_message_type_support_t Progress_GetResult_Response_message_t
   ::rosidl_typesupport_introspection_cpp::typesupport_identifier,
   &Progress_GetResult_Response_message_members,
   get_message_typesupport_handle_function,
+  &base_interfaces_demo__action__Progress_GetResult_Response__get_type_hash,
+  &base_interfaces_demo__action__Progress_GetResult_Response__get_type_description,
+  &base_interfaces_demo__action__Progress_GetResult_Response__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_introspection_cpp
@@ -982,7 +1304,257 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 #endif
 
 // already included above
-// #include "rosidl_runtime_c/service_type_support_struct.h"
+// #include "array"
+// already included above
+// #include "cstddef"
+// already included above
+// #include "string"
+// already included above
+// #include "vector"
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_typesupport_cpp/message_type_support.hpp"
+// already included above
+// #include "rosidl_typesupport_interface/macros.h"
+// already included above
+// #include "base_interfaces_demo/action/detail/progress__functions.h"
+// already included above
+// #include "base_interfaces_demo/action/detail/progress__struct.hpp"
+// already included above
+// #include "rosidl_typesupport_introspection_cpp/field_types.hpp"
+// already included above
+// #include "rosidl_typesupport_introspection_cpp/identifier.hpp"
+// already included above
+// #include "rosidl_typesupport_introspection_cpp/message_introspection.hpp"
+// already included above
+// #include "rosidl_typesupport_introspection_cpp/message_type_support_decl.hpp"
+// already included above
+// #include "rosidl_typesupport_introspection_cpp/visibility_control.h"
+
+namespace base_interfaces_demo
+{
+
+namespace action
+{
+
+namespace rosidl_typesupport_introspection_cpp
+{
+
+void Progress_GetResult_Event_init_function(
+  void * message_memory, rosidl_runtime_cpp::MessageInitialization _init)
+{
+  new (message_memory) base_interfaces_demo::action::Progress_GetResult_Event(_init);
+}
+
+void Progress_GetResult_Event_fini_function(void * message_memory)
+{
+  auto typed_message = static_cast<base_interfaces_demo::action::Progress_GetResult_Event *>(message_memory);
+  typed_message->~Progress_GetResult_Event();
+}
+
+size_t size_function__Progress_GetResult_Event__request(const void * untyped_member)
+{
+  const auto * member = reinterpret_cast<const std::vector<base_interfaces_demo::action::Progress_GetResult_Request> *>(untyped_member);
+  return member->size();
+}
+
+const void * get_const_function__Progress_GetResult_Event__request(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::vector<base_interfaces_demo::action::Progress_GetResult_Request> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__Progress_GetResult_Event__request(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::vector<base_interfaces_demo::action::Progress_GetResult_Request> *>(untyped_member);
+  return &member[index];
+}
+
+void fetch_function__Progress_GetResult_Event__request(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const auto & item = *reinterpret_cast<const base_interfaces_demo::action::Progress_GetResult_Request *>(
+    get_const_function__Progress_GetResult_Event__request(untyped_member, index));
+  auto & value = *reinterpret_cast<base_interfaces_demo::action::Progress_GetResult_Request *>(untyped_value);
+  value = item;
+}
+
+void assign_function__Progress_GetResult_Event__request(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  auto & item = *reinterpret_cast<base_interfaces_demo::action::Progress_GetResult_Request *>(
+    get_function__Progress_GetResult_Event__request(untyped_member, index));
+  const auto & value = *reinterpret_cast<const base_interfaces_demo::action::Progress_GetResult_Request *>(untyped_value);
+  item = value;
+}
+
+void resize_function__Progress_GetResult_Event__request(void * untyped_member, size_t size)
+{
+  auto * member =
+    reinterpret_cast<std::vector<base_interfaces_demo::action::Progress_GetResult_Request> *>(untyped_member);
+  member->resize(size);
+}
+
+size_t size_function__Progress_GetResult_Event__response(const void * untyped_member)
+{
+  const auto * member = reinterpret_cast<const std::vector<base_interfaces_demo::action::Progress_GetResult_Response> *>(untyped_member);
+  return member->size();
+}
+
+const void * get_const_function__Progress_GetResult_Event__response(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::vector<base_interfaces_demo::action::Progress_GetResult_Response> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__Progress_GetResult_Event__response(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::vector<base_interfaces_demo::action::Progress_GetResult_Response> *>(untyped_member);
+  return &member[index];
+}
+
+void fetch_function__Progress_GetResult_Event__response(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const auto & item = *reinterpret_cast<const base_interfaces_demo::action::Progress_GetResult_Response *>(
+    get_const_function__Progress_GetResult_Event__response(untyped_member, index));
+  auto & value = *reinterpret_cast<base_interfaces_demo::action::Progress_GetResult_Response *>(untyped_value);
+  value = item;
+}
+
+void assign_function__Progress_GetResult_Event__response(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  auto & item = *reinterpret_cast<base_interfaces_demo::action::Progress_GetResult_Response *>(
+    get_function__Progress_GetResult_Event__response(untyped_member, index));
+  const auto & value = *reinterpret_cast<const base_interfaces_demo::action::Progress_GetResult_Response *>(untyped_value);
+  item = value;
+}
+
+void resize_function__Progress_GetResult_Event__response(void * untyped_member, size_t size)
+{
+  auto * member =
+    reinterpret_cast<std::vector<base_interfaces_demo::action::Progress_GetResult_Response> *>(untyped_member);
+  member->resize(size);
+}
+
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Progress_GetResult_Event_message_member_array[3] = {
+  {
+    "info",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<service_msgs::msg::ServiceEventInfo>(),  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(base_interfaces_demo::action::Progress_GetResult_Event, info),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "request",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<base_interfaces_demo::action::Progress_GetResult_Request>(),  // members of sub message
+    false,  // is key
+    true,  // is array
+    1,  // array size
+    true,  // is upper bound
+    offsetof(base_interfaces_demo::action::Progress_GetResult_Event, request),  // bytes offset in struct
+    nullptr,  // default value
+    size_function__Progress_GetResult_Event__request,  // size() function pointer
+    get_const_function__Progress_GetResult_Event__request,  // get_const(index) function pointer
+    get_function__Progress_GetResult_Event__request,  // get(index) function pointer
+    fetch_function__Progress_GetResult_Event__request,  // fetch(index, &value) function pointer
+    assign_function__Progress_GetResult_Event__request,  // assign(index, value) function pointer
+    resize_function__Progress_GetResult_Event__request  // resize(index) function pointer
+  },
+  {
+    "response",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<base_interfaces_demo::action::Progress_GetResult_Response>(),  // members of sub message
+    false,  // is key
+    true,  // is array
+    1,  // array size
+    true,  // is upper bound
+    offsetof(base_interfaces_demo::action::Progress_GetResult_Event, response),  // bytes offset in struct
+    nullptr,  // default value
+    size_function__Progress_GetResult_Event__response,  // size() function pointer
+    get_const_function__Progress_GetResult_Event__response,  // get_const(index) function pointer
+    get_function__Progress_GetResult_Event__response,  // get(index) function pointer
+    fetch_function__Progress_GetResult_Event__response,  // fetch(index, &value) function pointer
+    assign_function__Progress_GetResult_Event__response,  // assign(index, value) function pointer
+    resize_function__Progress_GetResult_Event__response  // resize(index) function pointer
+  }
+};
+
+static const ::rosidl_typesupport_introspection_cpp::MessageMembers Progress_GetResult_Event_message_members = {
+  "base_interfaces_demo::action",  // message namespace
+  "Progress_GetResult_Event",  // message name
+  3,  // number of fields
+  sizeof(base_interfaces_demo::action::Progress_GetResult_Event),
+  false,  // has_any_key_member_
+  Progress_GetResult_Event_message_member_array,  // message members
+  Progress_GetResult_Event_init_function,  // function to initialize message memory (memory has to be allocated)
+  Progress_GetResult_Event_fini_function  // function to terminate message instance (will not free memory)
+};
+
+static const rosidl_message_type_support_t Progress_GetResult_Event_message_type_support_handle = {
+  ::rosidl_typesupport_introspection_cpp::typesupport_identifier,
+  &Progress_GetResult_Event_message_members,
+  get_message_typesupport_handle_function,
+  &base_interfaces_demo__action__Progress_GetResult_Event__get_type_hash,
+  &base_interfaces_demo__action__Progress_GetResult_Event__get_type_description,
+  &base_interfaces_demo__action__Progress_GetResult_Event__get_type_description_sources,
+};
+
+}  // namespace rosidl_typesupport_introspection_cpp
+
+}  // namespace action
+
+}  // namespace base_interfaces_demo
+
+
+namespace rosidl_typesupport_introspection_cpp
+{
+
+template<>
+ROSIDL_TYPESUPPORT_INTROSPECTION_CPP_PUBLIC
+const rosidl_message_type_support_t *
+get_message_type_support_handle<base_interfaces_demo::action::Progress_GetResult_Event>()
+{
+  return &::base_interfaces_demo::action::rosidl_typesupport_introspection_cpp::Progress_GetResult_Event_message_type_support_handle;
+}
+
+}  // namespace rosidl_typesupport_introspection_cpp
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+ROSIDL_TYPESUPPORT_INTROSPECTION_CPP_PUBLIC
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_cpp, base_interfaces_demo, action, Progress_GetResult_Event)() {
+  return &::base_interfaces_demo::action::rosidl_typesupport_introspection_cpp::Progress_GetResult_Event_message_type_support_handle;
+}
+
+#ifdef __cplusplus
+}
+#endif
+
 // already included above
 // #include "rosidl_typesupport_cpp/message_type_support.hpp"
 // already included above
@@ -991,6 +1563,8 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // #include "rosidl_typesupport_interface/macros.h"
 // already included above
 // #include "rosidl_typesupport_introspection_cpp/visibility_control.h"
+// already included above
+// #include "base_interfaces_demo/action/detail/progress__functions.h"
 // already included above
 // #include "base_interfaces_demo/action/detail/progress__struct.hpp"
 // already included above
@@ -1015,16 +1589,25 @@ namespace rosidl_typesupport_introspection_cpp
 static ::rosidl_typesupport_introspection_cpp::ServiceMembers Progress_GetResult_service_members = {
   "base_interfaces_demo::action",  // service namespace
   "Progress_GetResult",  // service name
-  // these two fields are initialized below on the first access
+  // the following fields are initialized below on first access
   // see get_service_type_support_handle<base_interfaces_demo::action::Progress_GetResult>()
   nullptr,  // request message
-  nullptr  // response message
+  nullptr,  // response message
+  nullptr,  // event message
 };
 
 static const rosidl_service_type_support_t Progress_GetResult_service_type_support_handle = {
   ::rosidl_typesupport_introspection_cpp::typesupport_identifier,
   &Progress_GetResult_service_members,
   get_service_typesupport_handle_function,
+  ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<base_interfaces_demo::action::Progress_GetResult_Request>(),
+  ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<base_interfaces_demo::action::Progress_GetResult_Response>(),
+  ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<base_interfaces_demo::action::Progress_GetResult_Event>(),
+  &::rosidl_typesupport_cpp::service_create_event_message<base_interfaces_demo::action::Progress_GetResult>,
+  &::rosidl_typesupport_cpp::service_destroy_event_message<base_interfaces_demo::action::Progress_GetResult>,
+  &base_interfaces_demo__action__Progress_GetResult__get_type_hash,
+  &base_interfaces_demo__action__Progress_GetResult__get_type_description,
+  &base_interfaces_demo__action__Progress_GetResult__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_introspection_cpp
@@ -1049,11 +1632,12 @@ get_service_type_support_handle<base_interfaces_demo::action::Progress_GetResult
   auto service_members = const_cast<::rosidl_typesupport_introspection_cpp::ServiceMembers *>(
     static_cast<const ::rosidl_typesupport_introspection_cpp::ServiceMembers *>(
       service_type_support->data));
-  // make sure that both the request_members_ and the response_members_ are initialized
+  // make sure all of the service_members are initialized
   // if they are not, initialize them
   if (
     service_members->request_members_ == nullptr ||
-    service_members->response_members_ == nullptr)
+    service_members->response_members_ == nullptr ||
+    service_members->event_members_ == nullptr)
   {
     // initialize the request_members_ with the static function from the external library
     service_members->request_members_ = static_cast<
@@ -1069,6 +1653,14 @@ get_service_type_support_handle<base_interfaces_demo::action::Progress_GetResult
       >(
       ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<
         ::base_interfaces_demo::action::Progress_GetResult_Response
+      >()->data
+      );
+    // initialize the event_members_ with the static function from the external library
+    service_members->event_members_ = static_cast<
+      const ::rosidl_typesupport_introspection_cpp::MessageMembers *
+      >(
+      ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<
+        ::base_interfaces_demo::action::Progress_GetResult_Event
       >()->data
       );
   }
@@ -1107,6 +1699,8 @@ ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // #include "rosidl_typesupport_cpp/message_type_support.hpp"
 // already included above
 // #include "rosidl_typesupport_interface/macros.h"
+// already included above
+// #include "base_interfaces_demo/action/detail/progress__functions.h"
 // already included above
 // #include "base_interfaces_demo/action/detail/progress__struct.hpp"
 // already included above
@@ -1147,6 +1741,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Progress_Feed
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<unique_identifier_msgs::msg::UUID>(),  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -1164,6 +1759,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Progress_Feed
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<base_interfaces_demo::action::Progress_Feedback>(),  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -1183,6 +1779,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMembers Progress_Fee
   "Progress_FeedbackMessage",  // message name
   2,  // number of fields
   sizeof(base_interfaces_demo::action::Progress_FeedbackMessage),
+  false,  // has_any_key_member_
   Progress_FeedbackMessage_message_member_array,  // message members
   Progress_FeedbackMessage_init_function,  // function to initialize message memory (memory has to be allocated)
   Progress_FeedbackMessage_fini_function  // function to terminate message instance (will not free memory)
@@ -1192,6 +1789,9 @@ static const rosidl_message_type_support_t Progress_FeedbackMessage_message_type
   ::rosidl_typesupport_introspection_cpp::typesupport_identifier,
   &Progress_FeedbackMessage_message_members,
   get_message_typesupport_handle_function,
+  &base_interfaces_demo__action__Progress_FeedbackMessage__get_type_hash,
+  &base_interfaces_demo__action__Progress_FeedbackMessage__get_type_description,
+  &base_interfaces_demo__action__Progress_FeedbackMessage__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_introspection_cpp

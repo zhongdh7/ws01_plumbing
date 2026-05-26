@@ -1,13 +1,13 @@
 file(REMOVE_RECURSE
-  "../rosidl_generator_rs/base_interfaces_demo/rust/Cargo.toml"
-  "../rosidl_generator_rs/base_interfaces_demo/rust/build.rs"
-  "../rosidl_generator_rs/base_interfaces_demo/rust/src/action.rs"
-  "../rosidl_generator_rs/base_interfaces_demo/rust/src/action/rmw.rs"
-  "../rosidl_generator_rs/base_interfaces_demo/rust/src/lib.rs"
-  "../rosidl_generator_rs/base_interfaces_demo/rust/src/msg.rs"
-  "../rosidl_generator_rs/base_interfaces_demo/rust/src/msg/rmw.rs"
-  "../rosidl_generator_rs/base_interfaces_demo/rust/src/srv.rs"
-  "../rosidl_generator_rs/base_interfaces_demo/rust/src/srv/rmw.rs"
+  "/home/loser/ws01_plumbing/build/base_interfaces_demo/rosidl_generator_rs/base_interfaces_demo/rust/Cargo.toml"
+  "/home/loser/ws01_plumbing/build/base_interfaces_demo/rosidl_generator_rs/base_interfaces_demo/rust/build.rs"
+  "/home/loser/ws01_plumbing/build/base_interfaces_demo/rosidl_generator_rs/base_interfaces_demo/rust/src/action.rs"
+  "/home/loser/ws01_plumbing/build/base_interfaces_demo/rosidl_generator_rs/base_interfaces_demo/rust/src/action/rmw.rs"
+  "/home/loser/ws01_plumbing/build/base_interfaces_demo/rosidl_generator_rs/base_interfaces_demo/rust/src/lib.rs"
+  "/home/loser/ws01_plumbing/build/base_interfaces_demo/rosidl_generator_rs/base_interfaces_demo/rust/src/msg.rs"
+  "/home/loser/ws01_plumbing/build/base_interfaces_demo/rosidl_generator_rs/base_interfaces_demo/rust/src/msg/rmw.rs"
+  "/home/loser/ws01_plumbing/build/base_interfaces_demo/rosidl_generator_rs/base_interfaces_demo/rust/src/srv.rs"
+  "/home/loser/ws01_plumbing/build/base_interfaces_demo/rosidl_generator_rs/base_interfaces_demo/rust/src/srv/rmw.rs"
   "CMakeFiles/base_interfaces_demo__rs"
 )
 

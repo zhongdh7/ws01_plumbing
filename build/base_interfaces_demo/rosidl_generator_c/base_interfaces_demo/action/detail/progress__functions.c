@@ -57,7 +57,7 @@ base_interfaces_demo__action__Progress_Goal__copy(
 }
 
 base_interfaces_demo__action__Progress_Goal *
-base_interfaces_demo__action__Progress_Goal__create()
+base_interfaces_demo__action__Progress_Goal__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   base_interfaces_demo__action__Progress_Goal * msg = (base_interfaces_demo__action__Progress_Goal *)allocator.allocate(sizeof(base_interfaces_demo__action__Progress_Goal), allocator.state);
@@ -282,7 +282,7 @@ base_interfaces_demo__action__Progress_Result__copy(
 }
 
 base_interfaces_demo__action__Progress_Result *
-base_interfaces_demo__action__Progress_Result__create()
+base_interfaces_demo__action__Progress_Result__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   base_interfaces_demo__action__Progress_Result * msg = (base_interfaces_demo__action__Progress_Result *)allocator.allocate(sizeof(base_interfaces_demo__action__Progress_Result), allocator.state);
@@ -507,7 +507,7 @@ base_interfaces_demo__action__Progress_Feedback__copy(
 }
 
 base_interfaces_demo__action__Progress_Feedback *
-base_interfaces_demo__action__Progress_Feedback__create()
+base_interfaces_demo__action__Progress_Feedback__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   base_interfaces_demo__action__Progress_Feedback * msg = (base_interfaces_demo__action__Progress_Feedback *)allocator.allocate(sizeof(base_interfaces_demo__action__Progress_Feedback), allocator.state);
@@ -769,7 +769,7 @@ base_interfaces_demo__action__Progress_SendGoal_Request__copy(
 }
 
 base_interfaces_demo__action__Progress_SendGoal_Request *
-base_interfaces_demo__action__Progress_SendGoal_Request__create()
+base_interfaces_demo__action__Progress_SendGoal_Request__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   base_interfaces_demo__action__Progress_SendGoal_Request * msg = (base_interfaces_demo__action__Progress_SendGoal_Request *)allocator.allocate(sizeof(base_interfaces_demo__action__Progress_SendGoal_Request), allocator.state);
@@ -1017,7 +1017,7 @@ base_interfaces_demo__action__Progress_SendGoal_Response__copy(
 }
 
 base_interfaces_demo__action__Progress_SendGoal_Response *
-base_interfaces_demo__action__Progress_SendGoal_Response__create()
+base_interfaces_demo__action__Progress_SendGoal_Response__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   base_interfaces_demo__action__Progress_SendGoal_Response * msg = (base_interfaces_demo__action__Progress_SendGoal_Response *)allocator.allocate(sizeof(base_interfaces_demo__action__Progress_SendGoal_Response), allocator.state);
@@ -1197,6 +1197,288 @@ base_interfaces_demo__action__Progress_SendGoal_Response__Sequence__copy(
 
 
 // Include directives for member types
+// Member `info`
+#include "service_msgs/msg/detail/service_event_info__functions.h"
+// Member `request`
+// Member `response`
+// already included above
+// #include "base_interfaces_demo/action/detail/progress__functions.h"
+
+bool
+base_interfaces_demo__action__Progress_SendGoal_Event__init(base_interfaces_demo__action__Progress_SendGoal_Event * msg)
+{
+  if (!msg) {
+    return false;
+  }
+  // info
+  if (!service_msgs__msg__ServiceEventInfo__init(&msg->info)) {
+    base_interfaces_demo__action__Progress_SendGoal_Event__fini(msg);
+    return false;
+  }
+  // request
+  if (!base_interfaces_demo__action__Progress_SendGoal_Request__Sequence__init(&msg->request, 0)) {
+    base_interfaces_demo__action__Progress_SendGoal_Event__fini(msg);
+    return false;
+  }
+  // response
+  if (!base_interfaces_demo__action__Progress_SendGoal_Response__Sequence__init(&msg->response, 0)) {
+    base_interfaces_demo__action__Progress_SendGoal_Event__fini(msg);
+    return false;
+  }
+  return true;
+}
+
+void
+base_interfaces_demo__action__Progress_SendGoal_Event__fini(base_interfaces_demo__action__Progress_SendGoal_Event * msg)
+{
+  if (!msg) {
+    return;
+  }
+  // info
+  service_msgs__msg__ServiceEventInfo__fini(&msg->info);
+  // request
+  base_interfaces_demo__action__Progress_SendGoal_Request__Sequence__fini(&msg->request);
+  // response
+  base_interfaces_demo__action__Progress_SendGoal_Response__Sequence__fini(&msg->response);
+}
+
+bool
+base_interfaces_demo__action__Progress_SendGoal_Event__are_equal(const base_interfaces_demo__action__Progress_SendGoal_Event * lhs, const base_interfaces_demo__action__Progress_SendGoal_Event * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  // info
+  if (!service_msgs__msg__ServiceEventInfo__are_equal(
+      &(lhs->info), &(rhs->info)))
+  {
+    return false;
+  }
+  // request
+  if (!base_interfaces_demo__action__Progress_SendGoal_Request__Sequence__are_equal(
+      &(lhs->request), &(rhs->request)))
+  {
+    return false;
+  }
+  // response
+  if (!base_interfaces_demo__action__Progress_SendGoal_Response__Sequence__are_equal(
+      &(lhs->response), &(rhs->response)))
+  {
+    return false;
+  }
+  return true;
+}
+
+bool
+base_interfaces_demo__action__Progress_SendGoal_Event__copy(
+  const base_interfaces_demo__action__Progress_SendGoal_Event * input,
+  base_interfaces_demo__action__Progress_SendGoal_Event * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  // info
+  if (!service_msgs__msg__ServiceEventInfo__copy(
+      &(input->info), &(output->info)))
+  {
+    return false;
+  }
+  // request
+  if (!base_interfaces_demo__action__Progress_SendGoal_Request__Sequence__copy(
+      &(input->request), &(output->request)))
+  {
+    return false;
+  }
+  // response
+  if (!base_interfaces_demo__action__Progress_SendGoal_Response__Sequence__copy(
+      &(input->response), &(output->response)))
+  {
+    return false;
+  }
+  return true;
+}
+
+base_interfaces_demo__action__Progress_SendGoal_Event *
+base_interfaces_demo__action__Progress_SendGoal_Event__create(void)
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  base_interfaces_demo__action__Progress_SendGoal_Event * msg = (base_interfaces_demo__action__Progress_SendGoal_Event *)allocator.allocate(sizeof(base_interfaces_demo__action__Progress_SendGoal_Event), allocator.state);
+  if (!msg) {
+    return NULL;
+  }
+  memset(msg, 0, sizeof(base_interfaces_demo__action__Progress_SendGoal_Event));
+  bool success = base_interfaces_demo__action__Progress_SendGoal_Event__init(msg);
+  if (!success) {
+    allocator.deallocate(msg, allocator.state);
+    return NULL;
+  }
+  return msg;
+}
+
+void
+base_interfaces_demo__action__Progress_SendGoal_Event__destroy(base_interfaces_demo__action__Progress_SendGoal_Event * msg)
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  if (msg) {
+    base_interfaces_demo__action__Progress_SendGoal_Event__fini(msg);
+  }
+  allocator.deallocate(msg, allocator.state);
+}
+
+
+bool
+base_interfaces_demo__action__Progress_SendGoal_Event__Sequence__init(base_interfaces_demo__action__Progress_SendGoal_Event__Sequence * array, size_t size)
+{
+  if (!array) {
+    return false;
+  }
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  base_interfaces_demo__action__Progress_SendGoal_Event * data = NULL;
+
+  if (size) {
+    data = (base_interfaces_demo__action__Progress_SendGoal_Event *)allocator.zero_allocate(size, sizeof(base_interfaces_demo__action__Progress_SendGoal_Event), allocator.state);
+    if (!data) {
+      return false;
+    }
+    // initialize all array elements
+    size_t i;
+    for (i = 0; i < size; ++i) {
+      bool success = base_interfaces_demo__action__Progress_SendGoal_Event__init(&data[i]);
+      if (!success) {
+        break;
+      }
+    }
+    if (i < size) {
+      // if initialization failed finalize the already initialized array elements
+      for (; i > 0; --i) {
+        base_interfaces_demo__action__Progress_SendGoal_Event__fini(&data[i - 1]);
+      }
+      allocator.deallocate(data, allocator.state);
+      return false;
+    }
+  }
+  array->data = data;
+  array->size = size;
+  array->capacity = size;
+  return true;
+}
+
+void
+base_interfaces_demo__action__Progress_SendGoal_Event__Sequence__fini(base_interfaces_demo__action__Progress_SendGoal_Event__Sequence * array)
+{
+  if (!array) {
+    return;
+  }
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+
+  if (array->data) {
+    // ensure that data and capacity values are consistent
+    assert(array->capacity > 0);
+    // finalize all array elements
+    for (size_t i = 0; i < array->capacity; ++i) {
+      base_interfaces_demo__action__Progress_SendGoal_Event__fini(&array->data[i]);
+    }
+    allocator.deallocate(array->data, allocator.state);
+    array->data = NULL;
+    array->size = 0;
+    array->capacity = 0;
+  } else {
+    // ensure that data, size, and capacity values are consistent
+    assert(0 == array->size);
+    assert(0 == array->capacity);
+  }
+}
+
+base_interfaces_demo__action__Progress_SendGoal_Event__Sequence *
+base_interfaces_demo__action__Progress_SendGoal_Event__Sequence__create(size_t size)
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  base_interfaces_demo__action__Progress_SendGoal_Event__Sequence * array = (base_interfaces_demo__action__Progress_SendGoal_Event__Sequence *)allocator.allocate(sizeof(base_interfaces_demo__action__Progress_SendGoal_Event__Sequence), allocator.state);
+  if (!array) {
+    return NULL;
+  }
+  bool success = base_interfaces_demo__action__Progress_SendGoal_Event__Sequence__init(array, size);
+  if (!success) {
+    allocator.deallocate(array, allocator.state);
+    return NULL;
+  }
+  return array;
+}
+
+void
+base_interfaces_demo__action__Progress_SendGoal_Event__Sequence__destroy(base_interfaces_demo__action__Progress_SendGoal_Event__Sequence * array)
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  if (array) {
+    base_interfaces_demo__action__Progress_SendGoal_Event__Sequence__fini(array);
+  }
+  allocator.deallocate(array, allocator.state);
+}
+
+bool
+base_interfaces_demo__action__Progress_SendGoal_Event__Sequence__are_equal(const base_interfaces_demo__action__Progress_SendGoal_Event__Sequence * lhs, const base_interfaces_demo__action__Progress_SendGoal_Event__Sequence * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  if (lhs->size != rhs->size) {
+    return false;
+  }
+  for (size_t i = 0; i < lhs->size; ++i) {
+    if (!base_interfaces_demo__action__Progress_SendGoal_Event__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+base_interfaces_demo__action__Progress_SendGoal_Event__Sequence__copy(
+  const base_interfaces_demo__action__Progress_SendGoal_Event__Sequence * input,
+  base_interfaces_demo__action__Progress_SendGoal_Event__Sequence * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  if (output->capacity < input->size) {
+    const size_t allocation_size =
+      input->size * sizeof(base_interfaces_demo__action__Progress_SendGoal_Event);
+    rcutils_allocator_t allocator = rcutils_get_default_allocator();
+    base_interfaces_demo__action__Progress_SendGoal_Event * data =
+      (base_interfaces_demo__action__Progress_SendGoal_Event *)allocator.reallocate(
+      output->data, allocation_size, allocator.state);
+    if (!data) {
+      return false;
+    }
+    // If reallocation succeeded, memory may or may not have been moved
+    // to fulfill the allocation request, invalidating output->data.
+    output->data = data;
+    for (size_t i = output->capacity; i < input->size; ++i) {
+      if (!base_interfaces_demo__action__Progress_SendGoal_Event__init(&output->data[i])) {
+        // If initialization of any new item fails, roll back
+        // all previously initialized items. Existing items
+        // in output are to be left unmodified.
+        for (; i-- > output->capacity; ) {
+          base_interfaces_demo__action__Progress_SendGoal_Event__fini(&output->data[i]);
+        }
+        return false;
+      }
+    }
+    output->capacity = input->size;
+  }
+  output->size = input->size;
+  for (size_t i = 0; i < input->size; ++i) {
+    if (!base_interfaces_demo__action__Progress_SendGoal_Event__copy(
+        &(input->data[i]), &(output->data[i])))
+    {
+      return false;
+    }
+  }
+  return true;
+}
+
+
+// Include directives for member types
 // Member `goal_id`
 // already included above
 // #include "unique_identifier_msgs/msg/detail/uuid__functions.h"
@@ -1258,7 +1540,7 @@ base_interfaces_demo__action__Progress_GetResult_Request__copy(
 }
 
 base_interfaces_demo__action__Progress_GetResult_Request *
-base_interfaces_demo__action__Progress_GetResult_Request__create()
+base_interfaces_demo__action__Progress_GetResult_Request__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   base_interfaces_demo__action__Progress_GetResult_Request * msg = (base_interfaces_demo__action__Progress_GetResult_Request *)allocator.allocate(sizeof(base_interfaces_demo__action__Progress_GetResult_Request), allocator.state);
@@ -1507,7 +1789,7 @@ base_interfaces_demo__action__Progress_GetResult_Response__copy(
 }
 
 base_interfaces_demo__action__Progress_GetResult_Response *
-base_interfaces_demo__action__Progress_GetResult_Response__create()
+base_interfaces_demo__action__Progress_GetResult_Response__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   base_interfaces_demo__action__Progress_GetResult_Response * msg = (base_interfaces_demo__action__Progress_GetResult_Response *)allocator.allocate(sizeof(base_interfaces_demo__action__Progress_GetResult_Response), allocator.state);
@@ -1687,6 +1969,289 @@ base_interfaces_demo__action__Progress_GetResult_Response__Sequence__copy(
 
 
 // Include directives for member types
+// Member `info`
+// already included above
+// #include "service_msgs/msg/detail/service_event_info__functions.h"
+// Member `request`
+// Member `response`
+// already included above
+// #include "base_interfaces_demo/action/detail/progress__functions.h"
+
+bool
+base_interfaces_demo__action__Progress_GetResult_Event__init(base_interfaces_demo__action__Progress_GetResult_Event * msg)
+{
+  if (!msg) {
+    return false;
+  }
+  // info
+  if (!service_msgs__msg__ServiceEventInfo__init(&msg->info)) {
+    base_interfaces_demo__action__Progress_GetResult_Event__fini(msg);
+    return false;
+  }
+  // request
+  if (!base_interfaces_demo__action__Progress_GetResult_Request__Sequence__init(&msg->request, 0)) {
+    base_interfaces_demo__action__Progress_GetResult_Event__fini(msg);
+    return false;
+  }
+  // response
+  if (!base_interfaces_demo__action__Progress_GetResult_Response__Sequence__init(&msg->response, 0)) {
+    base_interfaces_demo__action__Progress_GetResult_Event__fini(msg);
+    return false;
+  }
+  return true;
+}
+
+void
+base_interfaces_demo__action__Progress_GetResult_Event__fini(base_interfaces_demo__action__Progress_GetResult_Event * msg)
+{
+  if (!msg) {
+    return;
+  }
+  // info
+  service_msgs__msg__ServiceEventInfo__fini(&msg->info);
+  // request
+  base_interfaces_demo__action__Progress_GetResult_Request__Sequence__fini(&msg->request);
+  // response
+  base_interfaces_demo__action__Progress_GetResult_Response__Sequence__fini(&msg->response);
+}
+
+bool
+base_interfaces_demo__action__Progress_GetResult_Event__are_equal(const base_interfaces_demo__action__Progress_GetResult_Event * lhs, const base_interfaces_demo__action__Progress_GetResult_Event * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  // info
+  if (!service_msgs__msg__ServiceEventInfo__are_equal(
+      &(lhs->info), &(rhs->info)))
+  {
+    return false;
+  }
+  // request
+  if (!base_interfaces_demo__action__Progress_GetResult_Request__Sequence__are_equal(
+      &(lhs->request), &(rhs->request)))
+  {
+    return false;
+  }
+  // response
+  if (!base_interfaces_demo__action__Progress_GetResult_Response__Sequence__are_equal(
+      &(lhs->response), &(rhs->response)))
+  {
+    return false;
+  }
+  return true;
+}
+
+bool
+base_interfaces_demo__action__Progress_GetResult_Event__copy(
+  const base_interfaces_demo__action__Progress_GetResult_Event * input,
+  base_interfaces_demo__action__Progress_GetResult_Event * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  // info
+  if (!service_msgs__msg__ServiceEventInfo__copy(
+      &(input->info), &(output->info)))
+  {
+    return false;
+  }
+  // request
+  if (!base_interfaces_demo__action__Progress_GetResult_Request__Sequence__copy(
+      &(input->request), &(output->request)))
+  {
+    return false;
+  }
+  // response
+  if (!base_interfaces_demo__action__Progress_GetResult_Response__Sequence__copy(
+      &(input->response), &(output->response)))
+  {
+    return false;
+  }
+  return true;
+}
+
+base_interfaces_demo__action__Progress_GetResult_Event *
+base_interfaces_demo__action__Progress_GetResult_Event__create(void)
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  base_interfaces_demo__action__Progress_GetResult_Event * msg = (base_interfaces_demo__action__Progress_GetResult_Event *)allocator.allocate(sizeof(base_interfaces_demo__action__Progress_GetResult_Event), allocator.state);
+  if (!msg) {
+    return NULL;
+  }
+  memset(msg, 0, sizeof(base_interfaces_demo__action__Progress_GetResult_Event));
+  bool success = base_interfaces_demo__action__Progress_GetResult_Event__init(msg);
+  if (!success) {
+    allocator.deallocate(msg, allocator.state);
+    return NULL;
+  }
+  return msg;
+}
+
+void
+base_interfaces_demo__action__Progress_GetResult_Event__destroy(base_interfaces_demo__action__Progress_GetResult_Event * msg)
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  if (msg) {
+    base_interfaces_demo__action__Progress_GetResult_Event__fini(msg);
+  }
+  allocator.deallocate(msg, allocator.state);
+}
+
+
+bool
+base_interfaces_demo__action__Progress_GetResult_Event__Sequence__init(base_interfaces_demo__action__Progress_GetResult_Event__Sequence * array, size_t size)
+{
+  if (!array) {
+    return false;
+  }
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  base_interfaces_demo__action__Progress_GetResult_Event * data = NULL;
+
+  if (size) {
+    data = (base_interfaces_demo__action__Progress_GetResult_Event *)allocator.zero_allocate(size, sizeof(base_interfaces_demo__action__Progress_GetResult_Event), allocator.state);
+    if (!data) {
+      return false;
+    }
+    // initialize all array elements
+    size_t i;
+    for (i = 0; i < size; ++i) {
+      bool success = base_interfaces_demo__action__Progress_GetResult_Event__init(&data[i]);
+      if (!success) {
+        break;
+      }
+    }
+    if (i < size) {
+      // if initialization failed finalize the already initialized array elements
+      for (; i > 0; --i) {
+        base_interfaces_demo__action__Progress_GetResult_Event__fini(&data[i - 1]);
+      }
+      allocator.deallocate(data, allocator.state);
+      return false;
+    }
+  }
+  array->data = data;
+  array->size = size;
+  array->capacity = size;
+  return true;
+}
+
+void
+base_interfaces_demo__action__Progress_GetResult_Event__Sequence__fini(base_interfaces_demo__action__Progress_GetResult_Event__Sequence * array)
+{
+  if (!array) {
+    return;
+  }
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+
+  if (array->data) {
+    // ensure that data and capacity values are consistent
+    assert(array->capacity > 0);
+    // finalize all array elements
+    for (size_t i = 0; i < array->capacity; ++i) {
+      base_interfaces_demo__action__Progress_GetResult_Event__fini(&array->data[i]);
+    }
+    allocator.deallocate(array->data, allocator.state);
+    array->data = NULL;
+    array->size = 0;
+    array->capacity = 0;
+  } else {
+    // ensure that data, size, and capacity values are consistent
+    assert(0 == array->size);
+    assert(0 == array->capacity);
+  }
+}
+
+base_interfaces_demo__action__Progress_GetResult_Event__Sequence *
+base_interfaces_demo__action__Progress_GetResult_Event__Sequence__create(size_t size)
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  base_interfaces_demo__action__Progress_GetResult_Event__Sequence * array = (base_interfaces_demo__action__Progress_GetResult_Event__Sequence *)allocator.allocate(sizeof(base_interfaces_demo__action__Progress_GetResult_Event__Sequence), allocator.state);
+  if (!array) {
+    return NULL;
+  }
+  bool success = base_interfaces_demo__action__Progress_GetResult_Event__Sequence__init(array, size);
+  if (!success) {
+    allocator.deallocate(array, allocator.state);
+    return NULL;
+  }
+  return array;
+}
+
+void
+base_interfaces_demo__action__Progress_GetResult_Event__Sequence__destroy(base_interfaces_demo__action__Progress_GetResult_Event__Sequence * array)
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  if (array) {
+    base_interfaces_demo__action__Progress_GetResult_Event__Sequence__fini(array);
+  }
+  allocator.deallocate(array, allocator.state);
+}
+
+bool
+base_interfaces_demo__action__Progress_GetResult_Event__Sequence__are_equal(const base_interfaces_demo__action__Progress_GetResult_Event__Sequence * lhs, const base_interfaces_demo__action__Progress_GetResult_Event__Sequence * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  if (lhs->size != rhs->size) {
+    return false;
+  }
+  for (size_t i = 0; i < lhs->size; ++i) {
+    if (!base_interfaces_demo__action__Progress_GetResult_Event__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+base_interfaces_demo__action__Progress_GetResult_Event__Sequence__copy(
+  const base_interfaces_demo__action__Progress_GetResult_Event__Sequence * input,
+  base_interfaces_demo__action__Progress_GetResult_Event__Sequence * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  if (output->capacity < input->size) {
+    const size_t allocation_size =
+      input->size * sizeof(base_interfaces_demo__action__Progress_GetResult_Event);
+    rcutils_allocator_t allocator = rcutils_get_default_allocator();
+    base_interfaces_demo__action__Progress_GetResult_Event * data =
+      (base_interfaces_demo__action__Progress_GetResult_Event *)allocator.reallocate(
+      output->data, allocation_size, allocator.state);
+    if (!data) {
+      return false;
+    }
+    // If reallocation succeeded, memory may or may not have been moved
+    // to fulfill the allocation request, invalidating output->data.
+    output->data = data;
+    for (size_t i = output->capacity; i < input->size; ++i) {
+      if (!base_interfaces_demo__action__Progress_GetResult_Event__init(&output->data[i])) {
+        // If initialization of any new item fails, roll back
+        // all previously initialized items. Existing items
+        // in output are to be left unmodified.
+        for (; i-- > output->capacity; ) {
+          base_interfaces_demo__action__Progress_GetResult_Event__fini(&output->data[i]);
+        }
+        return false;
+      }
+    }
+    output->capacity = input->size;
+  }
+  output->size = input->size;
+  for (size_t i = 0; i < input->size; ++i) {
+    if (!base_interfaces_demo__action__Progress_GetResult_Event__copy(
+        &(input->data[i]), &(output->data[i])))
+    {
+      return false;
+    }
+  }
+  return true;
+}
+
+
+// Include directives for member types
 // Member `goal_id`
 // already included above
 // #include "unique_identifier_msgs/msg/detail/uuid__functions.h"
@@ -1770,7 +2335,7 @@ base_interfaces_demo__action__Progress_FeedbackMessage__copy(
 }
 
 base_interfaces_demo__action__Progress_FeedbackMessage *
-base_interfaces_demo__action__Progress_FeedbackMessage__create()
+base_interfaces_demo__action__Progress_FeedbackMessage__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   base_interfaces_demo__action__Progress_FeedbackMessage * msg = (base_interfaces_demo__action__Progress_FeedbackMessage *)allocator.allocate(sizeof(base_interfaces_demo__action__Progress_FeedbackMessage), allocator.state);

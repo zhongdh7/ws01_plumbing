@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/py03_action/py03_action.egg-info
+writing ../../build/py03_action/py03_action.egg-info/PKG-INFO
+writing dependency_links to ../../build/py03_action/py03_action.egg-info/dependency_links.txt
+writing entry points to ../../build/py03_action/py03_action.egg-info/entry_points.txt
+writing requirements to ../../build/py03_action/py03_action.egg-info/requires.txt
+writing top-level names to ../../build/py03_action/py03_action.egg-info/top_level.txt
+writing manifest file '../../build/py03_action/py03_action.egg-info/SOURCES.txt'
+reading manifest file '../../build/py03_action/py03_action.egg-info/SOURCES.txt'
+writing manifest file '../../build/py03_action/py03_action.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/loser/ws01_plumbing/build/py03_action/build
+creating /home/loser/ws01_plumbing/build/py03_action/build/lib
+creating /home/loser/ws01_plumbing/build/py03_action/build/lib/py03_action
+copying py03_action/__init__.py -> /home/loser/ws01_plumbing/build/py03_action/build/lib/py03_action
+copying py03_action/demo01_action_server.py -> /home/loser/ws01_plumbing/build/py03_action/build/lib/py03_action
+running install
+running install_lib
+creating /home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages/py03_action
+copying /home/loser/ws01_plumbing/build/py03_action/build/lib/py03_action/__init__.py -> /home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages/py03_action
+copying /home/loser/ws01_plumbing/build/py03_action/build/lib/py03_action/demo01_action_server.py -> /home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages/py03_action
+byte-compiling /home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages/py03_action/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages/py03_action/demo01_action_server.py to demo01_action_server.cpython-312.pyc
+running install_data
+creating /home/loser/ws01_plumbing/install/py03_action/share/ament_index
+creating /home/loser/ws01_plumbing/install/py03_action/share/ament_index/resource_index
+creating /home/loser/ws01_plumbing/install/py03_action/share/ament_index/resource_index/packages
+copying resource/py03_action -> /home/loser/ws01_plumbing/install/py03_action/share/ament_index/resource_index/packages
+copying package.xml -> /home/loser/ws01_plumbing/install/py03_action/share/py03_action
+running install_egg_info
+Copying ../../build/py03_action/py03_action.egg-info to /home/loser/ws01_plumbing/install/py03_action/lib/python3.12/site-packages/py03_action-0.0.0-py3.12.egg-info
+running install_scripts
+Installing demo01_action_server script to /home/loser/ws01_plumbing/install/py03_action/lib/py03_action
+writing list of installed files to '/home/loser/ws01_plumbing/build/py03_action/install.log'

@@ -2,6 +2,9 @@
 // with input from base_interfaces_demo:srv/Addints.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "base_interfaces_demo/srv/addints.hpp"
+
+
 #ifndef BASE_INTERFACES_DEMO__SRV__DETAIL__ADDINTS__BUILDER_HPP_
 #define BASE_INTERFACES_DEMO__SRV__DETAIL__ADDINTS__BUILDER_HPP_
 
@@ -107,6 +110,80 @@ inline
 auto build<::base_interfaces_demo::srv::Addints_Response>()
 {
   return base_interfaces_demo::srv::builder::Init_Addints_Response_sum();
+}
+
+}  // namespace base_interfaces_demo
+
+
+namespace base_interfaces_demo
+{
+
+namespace srv
+{
+
+namespace builder
+{
+
+class Init_Addints_Event_response
+{
+public:
+  explicit Init_Addints_Event_response(::base_interfaces_demo::srv::Addints_Event & msg)
+  : msg_(msg)
+  {}
+  ::base_interfaces_demo::srv::Addints_Event response(::base_interfaces_demo::srv::Addints_Event::_response_type arg)
+  {
+    msg_.response = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::base_interfaces_demo::srv::Addints_Event msg_;
+};
+
+class Init_Addints_Event_request
+{
+public:
+  explicit Init_Addints_Event_request(::base_interfaces_demo::srv::Addints_Event & msg)
+  : msg_(msg)
+  {}
+  Init_Addints_Event_response request(::base_interfaces_demo::srv::Addints_Event::_request_type arg)
+  {
+    msg_.request = std::move(arg);
+    return Init_Addints_Event_response(msg_);
+  }
+
+private:
+  ::base_interfaces_demo::srv::Addints_Event msg_;
+};
+
+class Init_Addints_Event_info
+{
+public:
+  Init_Addints_Event_info()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_Addints_Event_request info(::base_interfaces_demo::srv::Addints_Event::_info_type arg)
+  {
+    msg_.info = std::move(arg);
+    return Init_Addints_Event_request(msg_);
+  }
+
+private:
+  ::base_interfaces_demo::srv::Addints_Event msg_;
+};
+
+}  // namespace builder
+
+}  // namespace srv
+
+template<typename MessageType>
+auto build();
+
+template<>
+inline
+auto build<::base_interfaces_demo::srv::Addints_Event>()
+{
+  return base_interfaces_demo::srv::builder::Init_Addints_Event_info();
 }
 
 }  // namespace base_interfaces_demo

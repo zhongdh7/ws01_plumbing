@@ -88,7 +88,7 @@ base_interfaces_demo__msg__Student__copy(
 }
 
 base_interfaces_demo__msg__Student *
-base_interfaces_demo__msg__Student__create()
+base_interfaces_demo__msg__Student__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   base_interfaces_demo__msg__Student * msg = (base_interfaces_demo__msg__Student *)allocator.allocate(sizeof(base_interfaces_demo__msg__Student), allocator.state);

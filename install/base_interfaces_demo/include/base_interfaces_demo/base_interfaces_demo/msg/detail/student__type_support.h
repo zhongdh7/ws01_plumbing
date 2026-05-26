@@ -2,6 +2,9 @@
 // with input from base_interfaces_demo:msg/Student.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "base_interfaces_demo/msg/student.h"
+
+
 #ifndef BASE_INTERFACES_DEMO__MSG__DETAIL__STUDENT__TYPE_SUPPORT_H_
 #define BASE_INTERFACES_DEMO__MSG__DETAIL__STUDENT__TYPE_SUPPORT_H_
 
@@ -24,7 +27,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
   base_interfaces_demo,
   msg,
   Student
-)();
+)(void);
 
 #ifdef __cplusplus
 }

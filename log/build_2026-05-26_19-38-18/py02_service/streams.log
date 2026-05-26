@@ -1,0 +1,41 @@
+[1.015s] Invoking command in '/home/loser/ws01_plumbing/src/py02_service': AMENT_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loser/ws01_plumbing/build/py02_service/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loser/ws01_plumbing/install/py02_service/lib/python3.12/site-packages:/home/loser/ws01_plumbing/install/base_interfaces_demo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py02_service build --build-base /home/loser/ws01_plumbing/build/py02_service/build install --record /home/loser/ws01_plumbing/build/py02_service/install.log --single-version-externally-managed install_data
+[1.565s] running egg_info
+[1.565s] creating ../../build/py02_service/py02_service.egg-info
+[1.603s] writing ../../build/py02_service/py02_service.egg-info/PKG-INFO
+[1.603s] writing dependency_links to ../../build/py02_service/py02_service.egg-info/dependency_links.txt
+[1.603s] writing entry points to ../../build/py02_service/py02_service.egg-info/entry_points.txt
+[1.604s] writing requirements to ../../build/py02_service/py02_service.egg-info/requires.txt
+[1.604s] writing top-level names to ../../build/py02_service/py02_service.egg-info/top_level.txt
+[1.604s] writing manifest file '../../build/py02_service/py02_service.egg-info/SOURCES.txt'
+[1.685s] reading manifest file '../../build/py02_service/py02_service.egg-info/SOURCES.txt'
+[1.685s] writing manifest file '../../build/py02_service/py02_service.egg-info/SOURCES.txt'
+[1.685s] running build
+[1.685s] running build_py
+[1.693s] creating /home/loser/ws01_plumbing/build/py02_service/build
+[1.693s] creating /home/loser/ws01_plumbing/build/py02_service/build/lib
+[1.693s] creating /home/loser/ws01_plumbing/build/py02_service/build/lib/py02_service
+[1.693s] copying py02_service/__init__.py -> /home/loser/ws01_plumbing/build/py02_service/build/lib/py02_service
+[1.693s] copying py02_service/demo02_listener.py -> /home/loser/ws01_plumbing/build/py02_service/build/lib/py02_service
+[1.693s] copying py02_service/demo01_server.py -> /home/loser/ws01_plumbing/build/py02_service/build/lib/py02_service
+[1.693s] running install
+[1.702s] running install_lib
+[1.741s] creating /home/loser/ws01_plumbing/install/py02_service/lib/python3.12/site-packages/py02_service
+[1.743s] copying /home/loser/ws01_plumbing/build/py02_service/build/lib/py02_service/__init__.py -> /home/loser/ws01_plumbing/install/py02_service/lib/python3.12/site-packages/py02_service
+[1.743s] copying /home/loser/ws01_plumbing/build/py02_service/build/lib/py02_service/demo02_listener.py -> /home/loser/ws01_plumbing/install/py02_service/lib/python3.12/site-packages/py02_service
+[1.743s] copying /home/loser/ws01_plumbing/build/py02_service/build/lib/py02_service/demo01_server.py -> /home/loser/ws01_plumbing/install/py02_service/lib/python3.12/site-packages/py02_service
+[1.743s] byte-compiling /home/loser/ws01_plumbing/install/py02_service/lib/python3.12/site-packages/py02_service/__init__.py to __init__.cpython-312.pyc
+[1.743s] byte-compiling /home/loser/ws01_plumbing/install/py02_service/lib/python3.12/site-packages/py02_service/demo02_listener.py to demo02_listener.cpython-312.pyc
+[1.743s] byte-compiling /home/loser/ws01_plumbing/install/py02_service/lib/python3.12/site-packages/py02_service/demo01_server.py to demo01_server.cpython-312.pyc
+[1.743s] running install_data
+[1.744s] creating /home/loser/ws01_plumbing/install/py02_service/share/ament_index
+[1.744s] creating /home/loser/ws01_plumbing/install/py02_service/share/ament_index/resource_index
+[1.744s] creating /home/loser/ws01_plumbing/install/py02_service/share/ament_index/resource_index/packages
+[1.744s] copying resource/py02_service -> /home/loser/ws01_plumbing/install/py02_service/share/ament_index/resource_index/packages
+[1.751s] copying package.xml -> /home/loser/ws01_plumbing/install/py02_service/share/py02_service
+[1.751s] running install_egg_info
+[1.784s] Copying ../../build/py02_service/py02_service.egg-info to /home/loser/ws01_plumbing/install/py02_service/lib/python3.12/site-packages/py02_service-0.0.0-py3.12.egg-info
+[1.793s] running install_scripts
+[2.057s] Installing demo01_server script to /home/loser/ws01_plumbing/install/py02_service/lib/py02_service
+[2.059s] Installing demo02_listener script to /home/loser/ws01_plumbing/install/py02_service/lib/py02_service
+[2.059s] writing list of installed files to '/home/loser/ws01_plumbing/build/py02_service/install.log'
+[2.148s] Invoked command in '/home/loser/ws01_plumbing/src/py02_service' returned '0': AMENT_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loser/ws01_plumbing/build/py02_service/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loser/ws01_plumbing/install/py02_service/lib/python3.12/site-packages:/home/loser/ws01_plumbing/install/base_interfaces_demo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py02_service build --build-base /home/loser/ws01_plumbing/build/py02_service/build install --record /home/loser/ws01_plumbing/build/py02_service/install.log --single-version-externally-managed install_data

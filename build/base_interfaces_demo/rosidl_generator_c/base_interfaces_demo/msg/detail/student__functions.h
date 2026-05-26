@@ -2,6 +2,9 @@
 // with input from base_interfaces_demo:msg/Student.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "base_interfaces_demo/msg/student.h"
+
+
 #ifndef BASE_INTERFACES_DEMO__MSG__DETAIL__STUDENT__FUNCTIONS_H_
 #define BASE_INTERFACES_DEMO__MSG__DETAIL__STUDENT__FUNCTIONS_H_
 
@@ -13,6 +16,12 @@ extern "C"
 #include <stdbool.h>
 #include <stdlib.h>
 
+#include "rosidl_runtime_c/action_type_support_struct.h"
+#include "rosidl_runtime_c/message_type_support_struct.h"
+#include "rosidl_runtime_c/service_type_support_struct.h"
+#include "rosidl_runtime_c/type_description/type_description__struct.h"
+#include "rosidl_runtime_c/type_description/type_source__struct.h"
+#include "rosidl_runtime_c/type_hash.h"
 #include "rosidl_runtime_c/visibility_control.h"
 #include "base_interfaces_demo/msg/rosidl_generator_c__visibility_control.h"
 
@@ -53,7 +62,7 @@ base_interfaces_demo__msg__Student__fini(base_interfaces_demo__msg__Student * ms
  */
 ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
 base_interfaces_demo__msg__Student *
-base_interfaces_demo__msg__Student__create();
+base_interfaces_demo__msg__Student__create(void);
 
 /// Destroy msg/Student message.
 /**
@@ -92,6 +101,30 @@ bool
 base_interfaces_demo__msg__Student__copy(
   const base_interfaces_demo__msg__Student * input,
   base_interfaces_demo__msg__Student * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_type_hash_t *
+base_interfaces_demo__msg__Student__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeDescription *
+base_interfaces_demo__msg__Student__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource *
+base_interfaces_demo__msg__Student__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_base_interfaces_demo
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+base_interfaces_demo__msg__Student__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of msg/Student messages.
 /**

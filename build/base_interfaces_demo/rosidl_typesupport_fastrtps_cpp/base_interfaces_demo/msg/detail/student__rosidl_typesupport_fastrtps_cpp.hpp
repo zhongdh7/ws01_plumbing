@@ -5,6 +5,7 @@
 #ifndef BASE_INTERFACES_DEMO__MSG__DETAIL__STUDENT__ROSIDL_TYPESUPPORT_FASTRTPS_CPP_HPP_
 #define BASE_INTERFACES_DEMO__MSG__DETAIL__STUDENT__ROSIDL_TYPESUPPORT_FASTRTPS_CPP_HPP_
 
+#include <cstddef>
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "base_interfaces_demo/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h"
@@ -54,6 +55,25 @@ get_serialized_size(
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_interfaces_demo
 max_serialized_size_Student(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_interfaces_demo
+cdr_serialize_key(
+  const base_interfaces_demo::msg::Student & ros_message,
+  eprosima::fastcdr::Cdr &);
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_interfaces_demo
+get_serialized_size_key(
+  const base_interfaces_demo::msg::Student & ros_message,
+  size_t current_alignment);
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_base_interfaces_demo
+max_serialized_size_key_Student(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);

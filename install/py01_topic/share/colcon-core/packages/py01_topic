@@ -1,1 +1,1 @@
-base_interfaces_demo:rclpy:std_msgs
+base_interfaces_demo:launch:launch_ros:rclpy:ros2launch:std_msgs

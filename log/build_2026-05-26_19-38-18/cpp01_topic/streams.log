@@ -1,0 +1,52 @@
+[0.013s] Invoking command in '/home/loser/ws01_plumbing/build/cpp01_topic': AMENT_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loser/ws01_plumbing/install/base_interfaces_demo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/loser/ws01_plumbing/src/cpp01_topic -DCMAKE_INSTALL_PREFIX=/home/loser/ws01_plumbing/install/cpp01_topic
+[0.070s] -- The C compiler identification is GNU 13.3.0
+[0.117s] -- The CXX compiler identification is GNU 13.3.0
+[0.144s] -- Detecting C compiler ABI info
+[0.257s] -- Detecting C compiler ABI info - done
+[0.268s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.268s] -- Detecting C compile features
+[0.269s] -- Detecting C compile features - done
+[0.281s] -- Detecting CXX compiler ABI info
+[0.444s] -- Detecting CXX compiler ABI info - done
+[0.456s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.456s] -- Detecting CXX compile features
+[0.456s] -- Detecting CXX compile features - done
+[0.459s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.649s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.799s] -- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.875s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.910s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.937s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.965s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.084s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.088s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.157s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.172s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.190s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.248s] -- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.268s] -- Found base_interfaces_demo: 0.0.0 (/home/loser/ws01_plumbing/install/base_interfaces_demo/share/base_interfaces_demo/cmake)
+[1.373s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.579s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.579s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/loser/ws01_plumbing/src/cpp01_topic/include>
+[1.579s] -- Configured cppcheck exclude dirs and/or files: 
+[1.582s] -- Added test 'lint_cmake' to check CMake code style
+[1.583s] -- Added test 'uncrustify' to check C / C++ code style
+[1.583s] -- Configured uncrustify additional arguments: 
+[1.584s] -- Added test 'xmllint' to check XML markup files
+[1.590s] -- Configuring done (1.6s)
+[1.632s] -- Generating done (0.0s)
+[1.646s] -- Build files have been written to: /home/loser/ws01_plumbing/build/cpp01_topic
+[1.672s] Invoked command in '/home/loser/ws01_plumbing/build/cpp01_topic' returned '0': AMENT_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loser/ws01_plumbing/install/base_interfaces_demo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/loser/ws01_plumbing/src/cpp01_topic -DCMAKE_INSTALL_PREFIX=/home/loser/ws01_plumbing/install/cpp01_topic
+[1.672s] Invoking command in '/home/loser/ws01_plumbing/build/cpp01_topic': AMENT_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/loser/ws01_plumbing/install/base_interfaces_demo/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loser/ws01_plumbing/install/base_interfaces_demo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/loser/ws01_plumbing/build/cpp01_topic -- -j4 -l4
+[1.765s] [ 12%] [32mBuilding CXX object CMakeFiles/demo_str_cpp_listener.dir/src/demo_str_cpp_listener.cpp.o[0m
+[1.767s] [ 25%] [32mBuilding CXX object CMakeFiles/demo_stu_cpp_listener.dir/src/demo_stu_cpp_listener.cpp.o[0m
+[1.782s] [ 37%] [32mBuilding CXX object CMakeFiles/demo_stu_cpp_publisher.dir/src/demo_stu_cpp_publisher.cpp.o[0m
+[1.782s] [ 50%] [32mBuilding CXX object CMakeFiles/demo_str_cpp_publisher.dir/src/demo_str_cpp_publisher.cpp.o[0m
+[7.838s] [ 62%] [32m[1mLinking CXX executable demo_str_cpp_publisher[0m
+[8.079s] [ 62%] Built target demo_str_cpp_publisher
+[8.099s] [ 75%] [32m[1mLinking CXX executable demo_stu_cpp_publisher[0m
+[8.255s] [ 75%] Built target demo_stu_cpp_publisher
+[10.044s] [ 87%] [32m[1mLinking CXX executable demo_stu_cpp_listener[0m
+[10.257s] [ 87%] Built target demo_stu_cpp_listener
+[10.461s] [100%] [32m[1mLinking CXX executable demo_str_cpp_listener[0m
+[10.625s] [100%] Built target demo_str_cpp_listener

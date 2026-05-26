@@ -24,7 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'demo01_action_server = py03_action.demo01_action_server:main'
+            'demo01_action_server = py03_action.demo01_action_server:main',
+            "demo02_action_client = py03_action.demo02_action_client:main",
         ],
     },
 )
