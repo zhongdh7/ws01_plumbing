@@ -3,6 +3,7 @@
 #include "base_interfaces_demo/action/progress.hpp"
 using base_interfaces_demo::action::Progress;
 using namespace std::chrono_literals;
+using namespace std::placeholders;
 class ClientNode:public rclcpp::Node{
 public:
     ClientNode():Node("action_client_node_cpp"){
@@ -18,6 +19,26 @@ public:
             return;
         }
         //发送具体请求
+        auto goal=Progress::Goal();
+        goal.num=num;
+        rclcpp_action::Client<Progress>::SendGoalOptions options;
+        options.goal_response_callback=std::bind(&ClientNode::goal_response_callback,this,std::placeholders::_1);
+        options.feedback_callback=std::bind(&ClientNode::feedback_callback,this,std::placeholders::_1,std::placeholders::_2);
+        options.result_callback=std::bind(&ClientNode::result_callback,this,std::placeholders::_1);
+        auto future=client->async_send_goal(goal,options);
+    }
+    //处理目标之的服务端的响应
+    void goal_response_callback(rclcpp_action::ClientGoalHandle<Progress>::SharedPtr goal_handle){
+
+    }
+    //处理连续反馈
+    void feedback_callback(rclcpp_action::ClientGoalHandle<Progress>::SharedPtr goal_handle,
+        const std::shared_ptr<Progress::Feedback> feedback){
+
+    }
+    //处理最终结果
+    void result_callback(){
+
     }
 private:
     rclcpp_action::Client<Progress>::SharedPtr client;
